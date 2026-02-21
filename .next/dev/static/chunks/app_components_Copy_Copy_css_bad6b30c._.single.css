@@ -1,0 +1,10 @@
+/* [project]/app/components/Copy/Copy.css [app-client] (css) */
+.line {
+  will-change: transform;
+  margin-bottom: -.2em;
+  padding-bottom: .2em;
+  position: relative;
+  transform: translateY(100%);
+}
+
+/*# sourceMappingURL=app_components_Copy_Copy_css_bad6b30c._.single.css.map*/

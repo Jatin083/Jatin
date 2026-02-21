@@ -1,0 +1,44 @@
+/* [project]/app/components/OverlayNav/OverlayNav.css [app-client] (css) */
+.menu-item {
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.menu-item:hover {
+  background: #ffffff14;
+}
+
+.marquee {
+  width: 100%;
+  margin-top: 4px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, #0000 0%, #000 12% 88%, #0000 100%);
+  mask-image: linear-gradient(to right, #0000 0%, #000 12% 88%, #0000 100%);
+}
+
+.marquee-track {
+  gap: 8px;
+  width: max-content;
+  animation: 14s linear infinite marquee;
+  display: flex;
+}
+
+.marquee-track span {
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*# sourceMappingURL=app_components_OverlayNav_OverlayNav_css_bad6b30c._.single.css.map*/

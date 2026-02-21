@@ -71,7 +71,7 @@ export default function Hero() {
       const width = sw + (ew - sw) * eased;
       const height = sh + (eh - sh) * eased;
 
-      const MAX_Y = Math.min(window.innerHeight * 0.85, 520);
+      const MAX_Y = Math.min(window.innerHeight * 0.95, 570);
       const y = eased * MAX_Y;
 
       currentX.current += (targetX.current - currentX.current) * 0.08;
@@ -113,7 +113,7 @@ export default function Hero() {
 
                 /* md & lg only floating */
                 hidden md:block
-                absolute top-[15vh] left-1/2
+                absolute top-[6vh] left-1/2
               "
             >
               <video
@@ -142,21 +142,21 @@ export default function Hero() {
           </div>
 
           {/* ===== HERO ===== */}
-          <div className="h-screen w-full relative z-10">
+          <div className="h-screen w-full relative z-10 ">
             <div className="w-full pt-[clamp(14rem,40vh,28rem)] flex justify-between uppercase text-sm sm:text-md font-semibold tracking-wide">
-              <Copy delay={0.1}><span>A</span></Copy>
-              <Copy delay={0.2}><span>Seriously</span></Copy>
-              <Copy delay={0.3}><span>Good</span></Copy>
+              <span>A</span>
+              <span>Seriously</span>
+              <span>Good</span>
             </div>
 
             <div className="w-full flex justify-between uppercase font-saans font-bold tracking-tighter leading-none text-[clamp(3rem,11.5vw,11rem)]">
-              <Copy delay={0.4}><span>Design</span></Copy>
-              <Copy delay={0.5}><span>Engineer</span></Copy>
+              <span>Design</span>
+              <span>Engineer</span>
             </div>
 
             <div className="w-full flex justify-between mt-12 p-2 font-saans text-base sm:text-lg">
-              <Copy delay={0.6}><span>Scroll for</span></Copy>
-              <Copy delay={0.7}><span>Cool Sh*t</span></Copy>
+              <span>Scroll for</span>
+              <span>Cool Sh*t</span>
             </div>
           </div>
 

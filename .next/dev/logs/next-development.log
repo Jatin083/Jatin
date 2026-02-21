@@ -1,0 +1,4735 @@
+[00:00:02.573] Server  LOG     ✓ Ready in 2s
+[00:00:07.407] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:08.832] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:00:30.878] Server  LOG     ✓ Compiled in 1038ms
+[00:00:33.816] Server  LOG     ✓ Compiled in 185ms
+[00:03:03.763] Server  LOG     ✓ Compiled in 69ms
+[00:03:08.030] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:03:18.697] Server  LOG     ✓ Compiled in 45ms
+[00:03:23.814] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:05:19.952] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.954] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.956] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.961] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.966] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.968] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.970] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.972] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.975] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.977] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.979] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.981] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.984] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.986] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.988] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.991] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.994] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.997] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:19.999] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.002] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.006] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.007] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.009] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.012] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.020] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.022] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.024] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.027] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.032] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.034] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.037] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.039] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:20.044] Server  LOG     ✓ Compiled in 67ms
+[00:05:20.219] Browser ERROR   ./app/page.tsx:7:1
+Module not found: Can't resolve './components/StickyCards/StickyCards'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from "./components/StickyCards/StickyCards";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:48.192] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.195] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.199] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.203] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.207] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.211] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.216] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.218] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.222] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.226] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.230] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.233] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.236] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.239] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.243] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.246] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:48.248] Server  LOG     ✓ Compiled in 46ms
+[00:05:49.231] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:58.849] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.851] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.855] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.857] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.861] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.863] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.868] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.871] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.876] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.879] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.882] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.883] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.885] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.889] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.893] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.896] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:58.899] Server  LOG     ✓ Compiled in 61ms
+[00:05:59.224] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './sticky-cards..css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "@studio-freight/lenis";
+>  7 | import "./sticky-cards..css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:00.491] Server  LOG     ✓ Compiled in 106ms
+[00:06:01.224] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:01.224] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:06.573] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.575] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.577] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.581] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.585] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.587] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.589] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.591] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.594] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.595] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.597] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.599] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.601] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.602] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.607] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.609] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.612] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.615] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.622] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.624] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.628] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.633] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.636] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.638] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.641] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.643] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.645] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.649] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.654] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.656] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.660] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.663] Server  ERROR   ⨯ ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:06.667] Server  LOG     ✓ Compiled in 82ms
+[00:06:07.232] Browser ERROR   ./app/page.tsx:7:1
+Module not found: Can't resolve '.'
+   5 | import Work from "./components/work/work";
+   6 | import Service from "./components/service/services";
+>  7 | import StickyCards from ".";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 | export default function Page() {
+   9 |   const heroRef = useRef<HTMLDivElement | null>(null);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:07.781] Server  LOG     ✓ Compiled in 41ms
+[00:06:08.231] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:08.231] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:09.930] Server  ERROR   ⨯ ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+
+./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:06:10.055] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:10.055] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:11.372] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:11.372] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:11.540] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:11.540] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:13.124] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:13.124] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:13.947] Browser ERROR   uncaughtError: Error: ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:06:14.206] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:14.206] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:14.556] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:14.556] Browser ERROR   ./app/components/StickyCards/sticky-cards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/sticky-cards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:33.611] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './StickyCards.module.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "lenis";
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.617] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './StickyCards.module.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "lenis";
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.621] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './StickyCards.module.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "lenis";
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.625] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './StickyCards.module.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "lenis";
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.631] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.633] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.639] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:33.644] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:34.228] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:7:1
+Module not found: Can't resolve './StickyCards.module.css'
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import Lenis from "lenis";
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:34.228] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:47.142] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:47.144] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:47.146] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:47.149] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:48.227] Browser ERROR   ./app/components/StickyCards/StickyCards.module.css
+Transforming CSS failed
+Selector "img" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:48.227] Browser ERROR   ./app/components/StickyCards/StickyCards.module.css
+Transforming CSS failed
+Selector "section" is not pure. Pure selectors must contain at least one local class or id.
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.module.css [Client Component Browser]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.module.css [Client Component SSR]
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:06:48.227] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:06:55.878] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:55.881] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:55.882] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:55.884] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:06:56.236] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+  4 | import gsap from "gsap";
+  5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+> 6 | import Lenis from "lenis";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import styles from "./StickyCards.module.css";
+  8 |
+  9 | gsap.registerPlugin(ScrollTrigger);
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:08.003] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+   4 | import gsap from "gsap";
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+>  6 | import le
+     | ^^^^^^^^^
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:08.006] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+   4 | import gsap from "gsap";
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+>  6 | import le
+     | ^^^^^^^^^
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:08.009] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+   4 | import gsap from "gsap";
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+>  6 | import le
+     | ^^^^^^^^^
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:08.015] Server  ERROR   ⨯ ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+   4 | import gsap from "gsap";
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+>  6 | import le
+     | ^^^^^^^^^
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:08.228] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:7:1
+Parsing ecmascript source code failed
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+   6 | import le
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+Expected ',', got 'import'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:07:08.228] Browser ERROR   ./app/components/StickyCards/StickyCards.tsx:6:1
+Module not found: Can't resolve 'lenis'
+   4 | import gsap from "gsap";
+   5 | import { ScrollTrigger } from "gsap/ScrollTrigger";
+>  6 | import le
+     | ^^^^^^^^^
+>  7 | import styles from "./StickyCards.module.css";
+     | ^^^^^^^^^^^^^^^^
+   8 |
+   9 | gsap.registerPlugin(ScrollTrigger);
+  10 |
+
+Import traces:
+  Client Component Browser:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/StickyCards/StickyCards.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:10.303] Server  LOG     ✓ Compiled in 87ms
+[00:07:11.902] Server  ERROR   ⨯ ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:12.672] Server  ERROR   ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:13.430] Server  ERROR   ⨯ "unhandledRejection:" ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:14.338] Server  ERROR   ⨯ "unhandledRejection: " ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:15.078] Server  ERROR   ⨯ ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:16.317] Server  ERROR   ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:17.507] Server  ERROR   ⨯ "unhandledRejection:" ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:18.546] Server  ERROR   ⨯ "unhandledRejection: " ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:19.138] Browser ERROR   uncaughtError: SyntaxError: Unexpected identifier 'EasingFunction'
+[00:07:23.083] Server  ERROR   ⨯ ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:24.126] Server  ERROR   ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:25.045] Server  ERROR   ⨯ "unhandledRejection:" ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:26.032] Server  ERROR   ⨯ "unhandledRejection: " ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:07:27.235] Browser ERROR   uncaughtError: SyntaxError: Unexpected identifier 'EasingFunction'
+[00:08:45.358] Server  LOG     ✓ Compiled in 94ms
+[00:08:50.220] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:09:28.705] Server  LOG     ✓ Compiled in 49ms
+[00:09:29.928] Server  ERROR   ⨯ ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:09:30.600] Server  ERROR   ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:09:31.133] Server  ERROR   ⨯ "unhandledRejection:" ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:09:31.675] Server  ERROR   ⨯ "unhandledRejection: " ChunkLoadError: Failed to load chunk server/chunks/ssr/_1edbb7ba._.js from module [project]/node_modules/next/dist/esm/build/templates/app-page.js?page=/page { GLOBAL_ERROR_MODULE => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", METADATA_0 => "[project]/app/favicon.ico.mjs { IMAGE => \"[project]/app/favicon.ico (static in ecmascript, tag client)\" } [app-rsc] (structured image object, ecmascript, Next.js Server Component)", MODULE_1 => "[project]/app/layout.tsx [app-rsc] (ecmascript, Next.js Server Component)", MODULE_2 => "[project]/node_modules/next/dist/client/components/builtin/not-found.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_3 => "[project]/node_modules/next/dist/client/components/builtin/forbidden.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_4 => "[project]/node_modules/next/dist/client/components/builtin/unauthorized.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_5 => "[project]/node_modules/next/dist/client/components/builtin/global-error.js [app-rsc] (ecmascript, Next.js Server Component)", MODULE_6 => "[project]/app/page.tsx [app-rsc] (ecmascript, Next.js Server Component)" } [app-rsc] (ecmascript) <locals>
+[00:09:33.224] Browser ERROR   uncaughtError: SyntaxError: Unexpected identifier 'EasingFunction'
+[00:09:38.414] Server  LOG     ✓ Compiled in 102ms
+[00:09:42.636] Server  LOG     ✓ Compiled in 43ms
+[00:09:46.149] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:11:19.910] Server  LOG     ✓ Compiled in 50ms
+[00:11:30.405] Server  LOG     ✓ Compiled in 56ms
+[00:11:33.784] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:11:33.784] Browser WARN    Element not found: .undefined
+[00:11:43.401] Server  LOG     ✓ Compiled in 41ms
+[00:12:22.932] Server  LOG     ✓ Compiled in 81ms
+[00:12:26.509] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:13:23.446] Server  LOG     ✓ Compiled in 43ms
+[00:13:28.702] Server  LOG     ✓ Compiled in 51ms
+[00:16:22.702] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:16:22.839] Browser WARN    SplitText called before fonts loaded
+[00:17:52.102] Server  LOG     ✓ Compiled in 91ms
+[00:18:20.074] Server  LOG     ✓ Compiled in 44ms
+[00:19:35.869] Server  LOG     ✓ Compiled in 40ms
+[00:19:36.152] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:19:39.983] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:27:05.533] Server  LOG     ✓ Compiled in 117ms
+[00:27:06.219] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:27:07.009] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:07.035] Server  LOG     ✓ Compiled in 40ms
+[00:27:12.219] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:27:35.884] Server  LOG     ✓ Compiled in 135ms
+[00:27:47.953] Server  LOG     ✓ Compiled in 51ms
+[00:28:17.234] Server  LOG     ✓ Compiled in 41ms
+[00:28:21.232] Server  LOG     ✓ Compiled in 44ms
+[00:28:39.854] Server  LOG     ✓ Compiled in 65ms
+[00:28:47.346] Server  LOG     ✓ Compiled in 55ms
+[00:28:52.685] Server  LOG     ✓ Compiled in 40ms
+[00:29:00.209] Server  LOG     ✓ Compiled in 39ms
+[00:29:08.144] Server  LOG     ✓ Compiled in 38ms
+[00:29:11.819] Server  LOG     ✓ Compiled in 50ms
+[00:29:13.054] Server  LOG     ✓ Compiled in 38ms
+[00:29:15.961] Server  LOG     ✓ Compiled in 44ms
+[00:29:20.078] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:20.232] Browser WARN    SplitText called before fonts loaded
+[00:29:32.964] Server  LOG     ✓ Compiled in 41ms
+[00:29:35.032] Server  LOG     ✓ Compiled in 53ms
+[00:29:46.129] Server  LOG     ✓ Compiled in 36ms
+[00:29:53.432] Server  LOG     ✓ Compiled in 120ms
+[00:29:57.472] Server  LOG     ✓ Compiled in 36ms
+[00:29:58.837] Server  LOG     ✓ Compiled in 42ms
+[00:30:00.912] Server  LOG     ✓ Compiled in 44ms
+[00:30:05.847] Server  LOG     ✓ Compiled in 71ms
+[00:30:12.890] Server  LOG     ✓ Compiled in 39ms
+[00:30:54.413] Server  LOG     ✓ Compiled in 41ms
+[00:31:36.581] Server  LOG     ✓ Compiled in 38ms
+[00:31:37.941] Server  LOG     ✓ Compiled in 50ms
+[00:31:43.304] Server  LOG     ✓ Compiled in 32ms
+[00:31:45.107] Server  LOG     ✓ Compiled in 35ms
+[00:31:49.730] Server  LOG     ✓ Compiled in 41ms
+[00:31:51.603] Server  LOG     ✓ Compiled in 55ms
+[00:31:52.649] Server  LOG     ✓ Compiled in 36ms
+[00:31:54.133] Server  LOG     ✓ Compiled in 33ms
+[00:31:57.792] Server  LOG     ✓ Compiled in 36ms
+[00:32:10.284] Server  LOG     ✓ Compiled in 42ms
+[00:33:15.658] Server  LOG     ✓ Compiled in 86ms
+[00:33:33.979] Server  LOG     ✓ Compiled in 103ms
+[00:33:37.315] Server  LOG     ✓ Compiled in 40ms
+[00:35:38.634] Server  LOG     ✓ Compiled in 92ms
+[00:35:39.234] Browser ERROR   ./app/components/service/services.tsx:2:10
+Parsing ecmascript source code failed
+  1 | Services
+> 2 | Evolving with every brief and built for impact, my
+    |          ^^^^
+  3 | process spans design, development, and brand
+  4 | strategy—aligning vision with execution to bring
+  5 | clarity and edge to every project.
+
+Expected ';', '}' or <eof>
+
+Import traces:
+  Client Component Browser:
+    ./app/components/service/services.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/service/services.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:35:46.206] Server  LOG     ✓ Compiled in 130ms
+[00:36:04.979] Server  LOG     ✓ Compiled in 50ms
+[00:36:05.226] Browser ERROR   ./app/components/service/services.tsx:93:1
+Parsing ecmascript source code failed
+  91 |     </section>
+  92 |   );
+> 93 |
+     | ^
+
+Expected '}', got '<eof>'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/service/services.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/service/services.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:36:13.638] Server  LOG     ✓ Compiled in 46ms
+[00:36:48.911] Server  LOG     ✓ Compiled in 52ms
+[00:37:39.081] Server  LOG     ✓ Compiled in 138ms
+[00:37:39.231] Browser ERROR   ./app/page.tsx:14:14
+Parsing ecmascript source code failed
+  12 |       <Hero  />
+  13 |       <
+> 14 |       <Work />
+     |              ^
+  15 |       <Service />
+  16 |     </>
+  17 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:39.231] Browser ERROR   ./app/page.tsx:16:6
+Parsing ecmascript source code failed
+  14 |       <Work />
+  15 |       <Service />
+> 16 |     </>
+     |      ^^
+  17 |   );
+  18 | }
+  19 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:42.221] Browser ERROR   ./app/page.tsx:14:14
+Parsing ecmascript source code failed
+  12 |       <Hero  />
+  13 |       <Abou
+> 14 |       <Work />
+     |              ^
+  15 |       <Service />
+  16 |     </>
+  17 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:42.221] Browser ERROR   ./app/page.tsx:16:6
+Parsing ecmascript source code failed
+  14 |       <Work />
+  15 |       <Service />
+> 16 |     </>
+     |      ^^
+  17 |   );
+  18 | }
+  19 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:44.220] Browser ERROR   ./app/page.tsx:14:14
+Parsing ecmascript source code failed
+  12 |       <Hero  />
+  13 |       <About/
+> 14 |       <Work />
+     |              ^
+  15 |       <Service />
+  16 |     </>
+  17 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:44.220] Browser ERROR   ./app/page.tsx:16:6
+Parsing ecmascript source code failed
+  14 |       <Work />
+  15 |       <Service />
+> 16 |     </>
+     |      ^^
+  17 |   );
+  18 | }
+  19 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:48.225] Browser ERROR   ./app/page.tsx:14:14
+Parsing ecmascript source code failed
+  12 |       <Hero  />
+  13 |       <About
+> 14 |       <Work />
+     |              ^
+  15 |       <Service />
+  16 |     </>
+  17 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:48.225] Browser ERROR   ./app/page.tsx:16:6
+Parsing ecmascript source code failed
+  14 |       <Work />
+  15 |       <Service />
+> 16 |     </>
+     |      ^^
+  17 |   );
+  18 | }
+  19 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:52.225] Browser ERROR   ./app/page.tsx:14:14
+Parsing ecmascript source code failed
+  12 |       <Hero  />
+  13 |       <About /
+> 14 |       <Work />
+     |              ^
+  15 |       <Service />
+  16 |     </>
+  17 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:52.226] Browser ERROR   ./app/page.tsx:16:6
+Parsing ecmascript source code failed
+  14 |       <Work />
+  15 |       <Service />
+> 16 |     </>
+     |      ^^
+  17 |   );
+  18 | }
+  19 |
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:37:55.234] Browser ERROR   uncaughtError: ReferenceError: About is not defined
+[00:37:56.544] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:37:56.571] Server  LOG     ✓ Compiled in 269ms
+[00:37:59.493] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:39:23.973] Server  LOG     ✓ Compiled in 143ms
+[00:39:50.143] Server  LOG     ✓ Compiled in 43ms
+[00:39:52.725] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:39:52.865] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:39:52.866] Browser WARN    SplitText called before fonts loaded
+[00:44:06.210] Server  LOG     ✓ Compiled in 211ms
+[00:45:57.064] Server  LOG     ✓ Compiled in 181ms
+[00:46:00.686] Server  LOG     ✓ Compiled in 97ms
+[00:46:04.222] Server  LOG     ✓ Compiled in 75ms
+[00:46:07.839] Server  LOG     ✓ Compiled in 79ms
+[00:46:11.599] Server  LOG     ✓ Compiled in 117ms
+[00:46:18.543] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:18.970] Browser WARN    SplitText called before fonts loaded
+[00:46:25.011] Server  LOG     ✓ Compiled in 44ms
+[00:46:48.903] Server  LOG     ✓ Compiled in 57ms
+[00:46:56.445] Server  LOG     ✓ Compiled in 74ms
+[00:47:17.819] Server  LOG     ✓ Compiled in 51ms
+[00:47:20.790] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:47:38.669] Server  LOG     ✓ Compiled in 61ms
+[00:48:10.610] Server  LOG     ✓ Compiled in 44ms
+[00:48:15.083] Server  LOG     ✓ Compiled in 39ms
+[00:48:34.081] Server  LOG     ✓ Compiled in 39ms
+[00:48:46.065] Server  LOG     ✓ Compiled in 59ms
+[00:48:47.216] Server  LOG     ✓ Compiled in 42ms
+[00:48:50.504] Server  LOG     ✓ Compiled in 49ms
+[00:48:52.548] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:52.688] Browser WARN    SplitText called before fonts loaded
+[00:48:58.109] Server  LOG     ✓ Compiled in 83ms
+[00:48:59.746] Server  LOG     ✓ Compiled in 60ms
+[00:49:03.001] Server  LOG     ✓ Compiled in 52ms
+[00:49:05.477] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:05.623] Browser WARN    SplitText called before fonts loaded
+[00:49:17.616] Server  LOG     ✓ Compiled in 65ms
+[00:49:18.969] Server  LOG     ✓ Compiled in 36ms
+[00:49:48.679] Server  LOG     ✓ Compiled in 261ms
+[00:49:56.947] Server  LOG     ✓ Compiled in 47ms
+[00:49:57.232] Browser ERROR   ./app/components/Hero/hero.tsx:150:19
+Parsing ecmascript source code failed
+  148 |               <span>Seriously</span>
+  149 |               <span>Good</span>
+> 150 |             </div>
+      |                   ^
+> 151 |
+      | ^
+> 152 |             <div className="w-full flex justify-between uppercase font-saans font-bold tracking-tighter leading-none text-[clamp(3rem,11.5vw,11rem)]">
+      | ^^^^^^^^^^^^^
+  153 |               <span>Design</span>
+  154 |               <span>Engineer</span>
+  155 |             </div>
+
+Expected '</', got 'jsx text'
+
+Import traces:
+  Client Component Browser:
+    ./app/components/Hero/hero.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/components/Hero/hero.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:54:13.090] Server  LOG     ✓ Compiled in 94ms
+[00:54:24.890] Server  LOG     ✓ Compiled in 83ms
+[00:54:28.690] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:54:28.811] Browser WARN    SplitText called before fonts loaded
+[00:54:28.811] Browser WARN    SplitText called before fonts loaded
+[00:54:44.413] Server  LOG     ✓ Compiled in 44ms
+[00:54:47.346] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            style={{
++                             fontFamily: "Saans, sans-serif"
++                             backgroundColor: "#F5F5F5"
+-                             font-family: "Saans, sans-serif"
+-                             background-color: "rgb(245, 245, 245)"
+                            }}
+                          >
+                  ...
+
+[00:54:55.695] Server  LOG     ✓ Compiled in 64ms
+[00:54:58.170] Browser WARN    SplitText called before fonts loaded
+[00:54:58.171] Browser WARN    SplitText called before fonts loaded
+[00:55:59.708] Server  LOG     ✓ Compiled in 43ms
+[00:56:01.485] Server  LOG     ✓ Compiled in 50ms

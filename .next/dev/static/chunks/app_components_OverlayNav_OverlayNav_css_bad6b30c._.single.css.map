@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/OverlayNav/OverlayNav.css"],"sourcesContent":[".menu-item {\r\n  padding: 14px;\r\n  border-radius: 14px;\r\n  cursor: pointer;\r\n}\r\n\r\n.menu-item:hover {\r\n  background: rgba(255,255,255,0.08);\r\n}\r\n\r\n/* MARQUEE */\r\n.marquee {\r\n  width: 100%;\r\n  overflow: hidden;\r\n  margin-top: 4px;\r\n\r\n  mask-image: linear-gradient(\r\n    to right,\r\n    transparent 0%,\r\n    black 12%,\r\n    black 88%,\r\n    transparent 100%\r\n  );\r\n  -webkit-mask-image: linear-gradient(\r\n    to right,\r\n    transparent 0%,\r\n    black 12%,\r\n    black 88%,\r\n    transparent 100%\r\n  );\r\n}\r\n\r\n.marquee-track {\r\n  display: flex;\r\n  gap: 8px;\r\n  width: max-content;\r\n  animation: marquee 14s linear infinite;\r\n}\r\n\r\n.marquee-track span {\r\n  font-size: 14px;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  white-space: nowrap;\r\n}\r\n\r\n@keyframes marquee {\r\n  from {\r\n    transform: translateX(0);\r\n  }\r\n  to {\r\n    transform: translateX(-50%);\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;AAKA;;;;;;;;AAqBA;;;;;;;AAOA;;;;;;;AAOA"}}]
+}

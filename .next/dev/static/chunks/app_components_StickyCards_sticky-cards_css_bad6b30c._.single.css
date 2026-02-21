@@ -1,0 +1,104 @@
+/* [project]/app/components/StickyCards/sticky-cards.css [app-client] (css) */
+:root {
+  --base-1: #3d2fa9;
+  --base-2: #f72;
+  --base-3: #ff3d33;
+  --base-4: #785f47;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sticky-wrapper h1 {
+  text-transform: uppercase;
+  font-family: Barlow Condensed, sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.sticky-wrapper p {
+  text-transform: uppercase;
+  font-family: DM Mono, monospace;
+  font-size: .9rem;
+}
+
+section {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro, .outro {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.sticky-cards {
+  perspective: 1000px;
+  background: #e3e3db;
+}
+
+.card {
+  color: #fff;
+  transform-origin: bottom;
+  border-radius: 1rem;
+  gap: 1rem;
+  width: 65%;
+  height: 60%;
+  padding: 2.5rem;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.card .col {
+  flex: 1;
+}
+
+.card .col:first-child {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.card .col:last-child {
+  border-radius: .75rem;
+  overflow: hidden;
+}
+
+#card-1 {
+  background: var(--base-1);
+  z-index: 5;
+}
+
+#card-2 {
+  background: var(--base-2);
+  z-index: 4;
+}
+
+#card-3 {
+  background: var(--base-3);
+  z-index: 3;
+}
+
+#card-4 {
+  background: var(--base-4);
+  z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    flex-direction: column;
+    width: calc(100% - 4rem);
+    height: 75%;
+  }
+}
+
+/*# sourceMappingURL=app_components_StickyCards_sticky-cards_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jatin/OneDrive/Documents/GitHub/Jatin/app/components/Copy/Copy.css"],"sourcesContent":[".line {\r\n  position: relative;\r\n  transform: translateY(100%);\r\n  will-change: transform;\r\n  padding-bottom: 0.2em;\r\n  margin-bottom: -0.2em;\r\n}"],"names":[],"mappings":"AAAA"}}]
+}
