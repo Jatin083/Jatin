@@ -116,14 +116,14 @@ export default function Hero() {
                 absolute top-[6vh] left-1/2
               "
             >
-              <video
-                src="./video/video.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="absolute inset-0 w-full h-full object-cover"
-              />
+               <video
+                  src="/video/Apple.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
             </div>
           </div>
 

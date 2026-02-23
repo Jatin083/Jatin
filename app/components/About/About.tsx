@@ -2,7 +2,7 @@
 
 export default function About() {
   return (
-    <section className="w-full px-8 py-32">
+    <section className="w-full h-screen bg-green-300">
       <div className="mx-auto max-w-4xl">
         <p className="mb-6 text-xs uppercase tracking-[0.25em] text-black/50">
           About

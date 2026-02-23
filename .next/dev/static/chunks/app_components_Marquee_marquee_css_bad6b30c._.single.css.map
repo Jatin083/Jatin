@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/Marquee/marquee.css"],"sourcesContent":[".marquee {\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  width: 100%;\r\n}\r\n\r\n.marquee-track {\r\n  display: flex;\r\n  width: max-content;\r\n  animation: marquee 14s linear infinite;\r\n}\r\n\r\n.marquee-group {\r\n  display: flex;\r\n  gap: 0.6rem;\r\n  padding-right: 0.6rem;\r\n}\r\n\r\n.marquee-track span {\r\n  font-weight: 500;\r\n}\r\n\r\n/* SPEED VARIANTS */\r\n.marquee-slow {\r\n  animation-duration: 22s;\r\n}\r\n\r\n.marquee-normal {\r\n  animation-duration: 14s;\r\n}\r\n\r\n.marquee-fast {\r\n  animation-duration: 8s;\r\n}\r\n\r\n@keyframes marquee {\r\n  from {\r\n    transform: translateX(0);\r\n  }\r\n  to {\r\n    transform: translateX(-50%);\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;AAMA;;;;;;AAMA;;;;AAKA;;;;AAIA;;;;AAIA;;;;AAIA"}}]
-}
