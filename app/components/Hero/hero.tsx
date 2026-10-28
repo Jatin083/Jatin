@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import Copy from "@/app/components/Copy/Copy";
+import { useEffect, useRef, useState } from "react";
 
 /* ===== CONFIG ===== */
 const FINISH_AT = 0.75;
@@ -14,6 +13,16 @@ export default function Hero() {
 
   const targetX = useRef(0);
   const currentX = useRef(0);
+
+  // Render only the video for this screen size, so the browser downloads one.
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${MD_BREAKPOINT - 1}px)`);
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   /* ===== RESPONSIVE SIZE ===== */
   const getResponsiveSizes = () => {
@@ -88,17 +97,18 @@ export default function Hero() {
       rafId = requestAnimationFrame(animate);
     };
 
-    relativeRef.current?.addEventListener("mousemove", handleMouseMove);
+    const area = relativeRef.current;
+    area?.addEventListener("mousemove", handleMouseMove);
     rafId = requestAnimationFrame(animate);
 
     return () => {
-      relativeRef.current?.removeEventListener("mousemove", handleMouseMove);
+      area?.removeEventListener("mousemove", handleMouseMove);
       cancelAnimationFrame(rafId);
     };
   }, []);
 
   return (
-    <section>
+    <section id="home">
       <div ref={mainRef} className="h-[200vh] px-4 sm:px-8">
         <div ref={relativeRef} className="relative h-full w-full">
           {/* ===== VIDEO ===== */}
@@ -116,28 +126,36 @@ export default function Hero() {
                 absolute top-[6vh] left-1/2
               "
             >
-               <video
-                  src="/video/Apple.mp4"
+              {isMobile === false && (
+                <video
+                  src="/video/hero.mp4"
+                  poster="/img/hero-poster.jpg"
+                  aria-hidden="true"
                   autoPlay
                   muted
                   loop
                   playsInline
                   className="h-full w-full object-cover"
                 />
+              )}
             </div>
           </div>
 
           {/* ===== MOBILE STATIC VIDEO ===== */}
           <div className="block md:hidden w-full mt-[30vh] px-2">
             <div className="w-full h-[45vh] bg-orange-600 rounded-xl overflow-hidden">
-              <video
-                src="./video/video.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover"
-              />
+              {isMobile && (
+                <video
+                  src="/video/hero.mp4"
+                  poster="/img/hero-poster.jpg"
+                  aria-hidden="true"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              )}
             </div>
           </div>
 
@@ -149,10 +167,10 @@ export default function Hero() {
               <span>Good</span>
             </div>
 
-            <div className="w-full flex justify-between uppercase font-saans font-bold tracking-tighter leading-none text-[clamp(3rem,11.5vw,11rem)]">
+            <h1 className="w-full flex flex-col sm:flex-row sm:justify-between uppercase font-saans font-bold tracking-tighter leading-none text-[17vw] sm:text-[clamp(3rem,11.5vw,11rem)]">
               <span>Design</span>
-              <span>Engineer</span>
-            </div>
+              <span className="self-end sm:self-auto">Engineer</span>
+            </h1>
 
             <div className="w-full flex justify-between mt-12 p-2 font-saans text-base sm:text-lg">
               <span>Scroll for</span>

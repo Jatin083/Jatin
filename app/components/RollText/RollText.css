@@ -1,0 +1,30 @@
+@layer components {
+  .roll-text {
+    display: inline-flex;
+    overflow: hidden;
+    line-height: 1.2;
+    height: 1.2em;
+    vertical-align: bottom;
+  }
+
+  .roll-char {
+    display: inline-flex;
+    flex-direction: column;
+    transition: transform 450ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  .roll:hover .roll-char,
+  .roll:focus-visible .roll-char {
+    transform: translateY(-50%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .roll-char {
+      transition: none;
+    }
+    .roll:hover .roll-char,
+    .roll:focus-visible .roll-char {
+      transform: none;
+    }
+  }
+}

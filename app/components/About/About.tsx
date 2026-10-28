@@ -1,39 +1,28 @@
-"use client";
+const FACTS = [
+  { label: "Based in", value: "India, working globally" },
+  { label: "Building at", value: "Lumo Studio" },
+  { label: "Freelance", value: "Available March 2026" },
+];
 
 export default function About() {
   return (
-    <section className="w-full h-screen bg-green-300">
-      <div className="mx-auto max-w-4xl">
-        <p className="mb-6 text-xs uppercase tracking-[0.25em] text-black/50">
-          About
-        </p>
+    <section id="about" className="mx-auto max-w-[1100px] px-5 sm:px-8 py-32 md:py-48">
+      <p className="type-headline text-ink">
+        I’m Jatin, a design engineer. I shape interfaces where structure, typography and motion
+        come together — removing the unnecessary, refining the details, and building things that
+        feel intentional and last.
+      </p>
 
-        <h2 className="mb-12 text-4xl leading-tight">
-          I’m Jatin, a design engineer
-          focused on building clean,
-          thoughtful digital products.
-        </h2>
-
-        <div className="space-y-6">
-          <p className="text-sm leading-relaxed text-black/70">
-            I work across design and development, shaping interfaces
-            where structure, typography, and motion come together
-            with clarity and purpose.
-          </p>
-
-          <p className="text-sm leading-relaxed text-black/70">
-            My approach is grounded in simplicity — removing the
-            unnecessary, refining the details, and building systems
-            that scale without losing character.
-          </p>
-
-          <p className="text-sm leading-relaxed text-black/70">
-            Whether it’s a personal portfolio or a production product,
-            I focus on work that feels intentional, usable, and built
-            to last.
-          </p>
-        </div>
-      </div>
+      <dl className="mt-20 grid gap-8 border-t border-hairline pt-10 sm:grid-cols-3">
+        {FACTS.map((f) => (
+          <div key={f.label}>
+            <dt className="text-[0.875rem] text-faint">{f.label}</dt>
+            <dd className="mt-1.5 text-[1.3125rem] font-semibold tracking-[-0.015em] text-ink">
+              {f.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
     </section>
   );
 }
