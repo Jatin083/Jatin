@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import Navbar from "./components/Navbar/Navbar";
-import Overlay from "./components/OverlayNav/OverlayNav";
 import "./globals.css";
 import LenisProvider from "./providers/lenis-provider";
 
@@ -31,7 +30,6 @@ export default function RootLayout({
         <LenisProvider>
           <Navbar />
           <main>{children}</main>
-          <Overlay />
         </LenisProvider>
       </body>
     </html>

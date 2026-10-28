@@ -28,7 +28,7 @@ export default function Contact() {
         </Reveal>
       </section>
 
-      <footer className="mx-auto max-w-[1200px] px-5 sm:px-8 pt-10 pb-36 text-[0.75rem] text-faint">
+      <footer className="mx-auto max-w-[1200px] px-5 sm:px-8 pt-10 pb-10 text-[0.75rem] text-faint">
         <div className="flex flex-col gap-2 border-t border-hairline pt-5 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. Designed and built by hand.</p>
           <p>India · Working globally</p>
