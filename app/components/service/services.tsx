@@ -1,5 +1,3 @@
-import LineReveal from "../LineReveal/LineReveal";
-
 const SERVICES = [
   {
     title: "Brand direction",
@@ -25,9 +23,9 @@ const SERVICES = [
 export default function Service() {
   return (
     <section id="services" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
-      <LineReveal as="h2" className="type-headline max-w-2xl">
+      <h2 className="type-headline max-w-2xl">
         Designed with intent. Built to last.
-      </LineReveal>
+      </h2>
 
       {/* Bento grid */}
       <div className="mt-14 grid gap-5 md:grid-cols-3">

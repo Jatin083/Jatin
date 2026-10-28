@@ -1,5 +1,3 @@
-import LineReveal from "../LineReveal/LineReveal";
-
 const FACTS = [
   { label: "Based in", value: "India, working globally" },
   { label: "Building at", value: "Lumo Studio" },
@@ -9,11 +7,11 @@ const FACTS = [
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-[1100px] px-5 sm:px-8 py-32 md:py-48">
-      <LineReveal as="p" className="type-headline text-ink">
+      <p className="type-headline text-ink">
         I’m Jatin, a design engineer. I shape interfaces where structure, typography and motion
         come together — removing the unnecessary, refining the details, and building things that
         feel intentional and last.
-      </LineReveal>
+      </p>
 
       <dl className="mt-20 grid gap-8 border-t border-hairline pt-10 sm:grid-cols-3">
         {FACTS.map((f) => (

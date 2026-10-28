@@ -29,10 +29,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preload" href="/font/Saans-VF.woff2" as="font" type="font/woff2" crossOrigin="" />
-        {/* Without JS nothing splits text, so show it straight away. */}
-        <noscript>
-          <style>{`[data-line-reveal]{visibility:visible}`}</style>
-        </noscript>
       </head>
       <body className="font-sans bg-canvas text-ink">
         <LenisProvider>

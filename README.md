@@ -6,11 +6,10 @@ Personal portfolio of **Jatin Singh**, a design engineer. Built with a focus on 
 
 - [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
 - [Tailwind CSS 4](https://tailwindcss.com)
-- [GSAP](https://gsap.com) SplitText + ScrollTrigger for Lumo-style line reveals (`app/components/LineReveal`)
+- [GSAP](https://gsap.com) ScrollTrigger, kept in sync with Lenis
 - [Motion](https://motion.dev) for springs, scroll-linked effects and hover/press feedback
 - [Lenis](https://lenis.darkroom.engineering) for smooth scrolling, driven by GSAP’s ticker
-- [React Bits](https://reactbits.dev) components (LogoLoop, Magnet), vendored in `app/components/reactbits`
-- [useAnimations](https://useanimations.com) animated icons (`react-useanimations`), played by `app/components/AnimatedIcon`
+- [React Bits](https://reactbits.dev) Magnet component, vendored in `app/components/reactbits`
 - [Cuberto mouse-follower](https://github.com/Cuberto/mouse-follower) cursor, loaded only on mouse devices after the page is idle
 
 ## Sections
@@ -33,7 +32,7 @@ Projects in the Work section and the service list are plain arrays at the top of
 - Hero video: one 1600px H.264 file with a poster frame; paused when off screen.
 - Hero motion animates `clip-path` only, so scrolling never triggers layout.
 - Project screenshots go through `next/image` (AVIF/WebP, responsive sizes).
-- Lottie icons and the cursor load lazily, never during first paint.
+- The cursor loads lazily, never during first paint; project hover videos load only on hover.
 
 ## Getting started
 

@@ -9,22 +9,6 @@
   font-display: swap;
 }
 
-/* ===== LUMO LINE REVEAL ===== */
-/* Hidden until GSAP splits it, so lines never flash before rising. */
-[data-line-reveal] {
-  visibility: hidden;
-}
-/* Room for descenders inside each line's mask. */
-.lr-line-mask {
-  padding-bottom: 0.1em;
-  margin-bottom: -0.1em;
-}
-@media (prefers-reduced-motion: reduce) {
-  [data-line-reveal] {
-    visibility: visible;
-  }
-}
-
 /* ===== DESIGN TOKENS (Apple-style neutrals + one accent) ===== */
 @theme {
   --font-saans: "Saans", -apple-system, BlinkMacSystemFont, "SF Pro Display", system-ui, sans-serif;
@@ -171,14 +155,6 @@ html {
 }
 
 /* ===== MICRO-INTERACTIONS ===== */
-
-/* useanimations icons follow the text colour */
-.anim-icon path {
-  stroke: currentColor;
-}
-.anim-icon path[fill]:not([fill="none"]) {
-  fill: currentColor;
-}
 
 /* Text links: underline draws in from the left, chevron nudges forward */
 .btn-link {

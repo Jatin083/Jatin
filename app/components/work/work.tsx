@@ -1,10 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useRef } from "react";
-import LineReveal from "../LineReveal/LineReveal";
-import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
-import github from "react-useanimations/lib/github";
-import explore from "react-useanimations/lib/explore";
 import { SITE } from "@/app/site";
 
 type Project = {
@@ -157,12 +153,10 @@ function ProjectCard({ project }: { project: Project }) {
             </ul>
             <div className="flex items-center gap-4 text-[0.9375rem]">
               <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-1.5">
-                <AnimatedIcon icon={explore} size={18} />
-                Live
+                Live <span aria-hidden className="chev">›</span>
               </a>
               <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-1.5">
-                <AnimatedIcon icon={github} size={18} />
-                Code
+                Code <span aria-hidden className="chev">›</span>
               </a>
             </div>
           </div>
@@ -175,11 +169,10 @@ export default function Work() {
   return (
     <section id="work" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
       <div className="flex flex-wrap items-end justify-between gap-6">
-        <LineReveal as="h2" className="type-headline">
+        <h2 className="type-headline">
           Things I’ve built.
-        </LineReveal>
+        </h2>
         <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-2 text-[1.0625rem]">
-          <AnimatedIcon icon={github} size={22} />
           All projects on GitHub <span aria-hidden className="chev">›</span>
         </a>
       </div>
