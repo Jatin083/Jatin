@@ -1,16 +1,13 @@
-'use client';
 import './marquee.css';
 
 type MarqueeProps = {
   items: string[];
-  repeat?: number;
   speed?: 'slow' | 'normal' | 'fast';
   className?: string;
 };
 
 export default function Marquee({
   items,
-  repeat = 2,
   speed = 'normal',
   className = '',
 }: MarqueeProps) {
@@ -21,11 +18,13 @@ export default function Marquee({
       ? 'marquee-fast'
       : 'marquee-normal';
 
+  // The track scrolls by -50%, so it always holds exactly two copies of the
+  // items. Fewer copies makes the loop visibly jump back to the start.
   return (
     <div className={`marquee ${className}`}>
       <div className={`marquee-track ${speedClass}`}>
-        {Array.from({ length: repeat }).map((_, i) => (
-          <div key={i} className="marquee-group">
+        {[0, 1].map((copy) => (
+          <div key={copy} className="marquee-group" aria-hidden={copy === 1}>
             {items.map((item, idx) => (
               <span key={idx}>{item}</span>
             ))}

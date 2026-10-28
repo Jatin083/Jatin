@@ -1,6 +1,6 @@
 "use client";
 import "./Copy.css";
-import React, { useRef } from "react";
+import { useRef } from "react";
 
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
@@ -19,7 +19,7 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
     try {
       await document.fonts.ready;
 
-      const customFonts = ["Manrope"];
+      const customFonts = ["Saans"];
       const fontCheckPromises = customFonts.map((fontFamily) => {
         return document.fonts.check(`16px ${fontFamily}`);
       });
@@ -28,7 +28,7 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
       await new Promise((resolve) => setTimeout(resolve, 100));
 
       return true;
-    } catch (error) {
+    } catch {
       await new Promise((resolve) => setTimeout(resolve, 200));
       return true;
     }
@@ -114,10 +114,6 @@ export default function Copy({ children, animateOnScroll = true, delay = 0 }) {
     },
     { scope: containerRef, dependencies: [animateOnScroll, delay] }
   );
-
-  if (React.Children.count(children) === 1) {
-    return React.cloneElement(children, { ref: containerRef });
-  }
 
   return (
     <div ref={containerRef} data-copy-wrapper="true">

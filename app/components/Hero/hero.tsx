@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Copy from "@/app/components/Copy/Copy";
 
 /* ===== CONFIG ===== */
 const FINISH_AT = 0.75;
@@ -88,17 +87,18 @@ export default function Hero() {
       rafId = requestAnimationFrame(animate);
     };
 
-    relativeRef.current?.addEventListener("mousemove", handleMouseMove);
+    const area = relativeRef.current;
+    area?.addEventListener("mousemove", handleMouseMove);
     rafId = requestAnimationFrame(animate);
 
     return () => {
-      relativeRef.current?.removeEventListener("mousemove", handleMouseMove);
+      area?.removeEventListener("mousemove", handleMouseMove);
       cancelAnimationFrame(rafId);
     };
   }, []);
 
   return (
-    <section>
+    <section id="home">
       <div ref={mainRef} className="h-[200vh] px-4 sm:px-8">
         <div ref={relativeRef} className="relative h-full w-full">
           {/* ===== VIDEO ===== */}
@@ -117,7 +117,9 @@ export default function Hero() {
               "
             >
                <video
-                  src="/video/Apple.mp4"
+                  src="/video/hero.mp4"
+                  aria-hidden="true"
+                  preload="auto"
                   autoPlay
                   muted
                   loop
@@ -131,7 +133,8 @@ export default function Hero() {
           <div className="block md:hidden w-full mt-[30vh] px-2">
             <div className="w-full h-[45vh] bg-orange-600 rounded-xl overflow-hidden">
               <video
-                src="./video/video.mp4"
+                src="/video/hero.mp4"
+                aria-hidden="true"
                 autoPlay
                 muted
                 loop
