@@ -43,7 +43,10 @@ export default function AnimatedIcon({
       anim.play();
     };
 
-    import("lottie-web/build/player/lottie_light").then(({ default: lottie }) => {
+    // Load the Lottie player only once this icon is on screen and the browser
+    // is idle, so icons never compete with first paint.
+    const load = () =>
+      import("lottie-web/build/player/lottie_light").then(({ default: lottie }) => {
       if (cancelled) return;
       anim = lottie.loadAnimation({
         container: el,
@@ -60,8 +63,20 @@ export default function AnimatedIcon({
       }
     });
 
+    const idle = window.requestIdleCallback ?? ((cb: () => void) => window.setTimeout(cb, 200));
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        io.disconnect();
+        idle(() => void load());
+      },
+      { rootMargin: "200px" }
+    );
+    io.observe(el);
+
     return () => {
       cancelled = true;
+      io.disconnect();
       host.removeEventListener("pointerenter", enter);
       host.removeEventListener("pointerleave", leave);
       host.removeEventListener("focus", enter);

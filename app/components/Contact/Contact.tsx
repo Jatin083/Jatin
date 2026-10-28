@@ -1,5 +1,4 @@
-import Reveal from "../Reveal/Reveal";
-import SplitText from "../reactbits/SplitText/SplitText";
+import LineReveal from "../LineReveal/LineReveal";
 import Magnet from "../reactbits/Magnet/Magnet";
 import RollText from "../RollText/RollText";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
@@ -12,22 +11,11 @@ export default function Contact() {
   return (
     <>
       <section id="contact" className="mx-auto max-w-[1200px] px-5 sm:px-8 pt-24 md:pt-32">
-        <Reveal>
-          <div className="rounded-[28px] bg-black px-8 py-20 sm:py-28 text-center text-[#f5f5f7]">
-            <p className="type-eyebrow text-[#a1a1a6]">Contact</p>
-            {/* React Bits SplitText: letters rise from a mask, staggered from the centre */}
-            <SplitText
-              text="Let’s build something great."
-              tag="h2"
-              splitType="words, chars"
-              mask
-              delay={18}
-              duration={1}
-              ease="power4.out"
-              staggerFrom="center"
-              textAlign="center"
-              className="type-hero mt-4 block !text-[clamp(2.75rem,8vw,7rem)] !leading-[1.06] mx-auto max-w-[11ch]"
-            />
+        <div>
+          <div data-cursor="-inverse" className="rounded-[28px] bg-black px-8 py-20 sm:py-28 text-center text-[#f5f5f7]">
+            <LineReveal as="h2" className="type-hero block !text-[clamp(2.75rem,8vw,7rem)] !leading-[1.06] mx-auto max-w-[11ch]">
+              Let’s build something great.
+            </LineReveal>
             <p className="type-body-lg mx-auto mt-6 max-w-md text-[#a1a1a6]">
               Taking on freelance projects from March 2026.
             </p>
@@ -45,14 +33,14 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </Reveal>
+        </div>
       </section>
 
       <footer className="mx-auto max-w-[1200px] px-5 sm:px-8 pt-10 pb-10 text-[0.75rem] text-faint">
         <div className="flex flex-col gap-2 border-t border-hairline pt-5 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. Designed and built by hand.</p>
           <div className="flex items-center gap-6">
-            <p>India · Working globally</p>
+            <p>India, working globally</p>
             <a href="#home" className="roll inline-flex items-center gap-1 font-medium text-ink">
               <AnimatedIcon icon={arrowUp} size={16} />
               <RollText>Back to top</RollText>

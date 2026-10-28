@@ -9,33 +9,38 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
-import SplitText from "../reactbits/SplitText/SplitText";
+import LineReveal from "../LineReveal/LineReveal";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import scrollDown from "react-useanimations/lib/scrollDown";
 
-// Original split layout. The video tile drifts toward the cursor on a
-// critically damped spring, then on scroll grows into a full-bleed frame
-// and the cursor influence fades out as it settles.
+// Tile geometry at rest (desktop): 32vw x 44vh, 9vh from the top, centred.
+const TILE = { top: 9, height: 44, side: 34 }; // side = (100 - 32) / 2 vw
+
+// One video, sized to the full viewport and revealed through a clip-path
+// window. Scrolling opens the window to full bleed; the cursor slides it
+// sideways on a spring. Only clip-path changes per frame, so the browser
+// never re-lays-out or rescales the video.
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const reduce = useReducedMotion();
 
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end end"],
   });
+  // Opening finishes at 70% of the section so the full frame can hold.
+  const open = useTransform(scrollYProgress, [0, 0.7], [0, 1], { clamp: true });
 
-  // Growth finishes at 70% of the section so the full frame can hold.
-  const width = useTransform(scrollYProgress, [0, 0.7], ["32vw", "100vw"]);
-  const height = useTransform(scrollYProgress, [0, 0.7], ["44vh", "100vh"]);
-  const radius = useTransform(scrollYProgress, [0, 0.7], [24, 0]);
-  const top = useTransform(scrollYProgress, [0, 0.7], ["9vh", "0vh"]);
-
-  // Cursor follow: spring from the live value, so moving back and forth never jumps.
   const pointerX = useMotionValue(0);
   const springX = useSpring(pointerX, { bounce: 0, duration: 0.6 });
-  const followWeight = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const x = useTransform(() => springX.get() * followWeight.get());
+
+  const clip = useTransform(() => {
+    const k = 1 - open.get();
+    const x = springX.get() * k;
+    const radius = 24 * k;
+    return `inset(calc(${TILE.top}vh * ${k}) calc((${TILE.side}vw - ${x}px) * ${k}) calc(${100 - TILE.top - TILE.height}vh * ${k}) calc((${TILE.side}vw + ${x}px) * ${k}) round ${radius}px)`;
+  });
 
   useEffect(() => {
     if (reduce) return;
@@ -44,29 +49,41 @@ export default function Hero() {
     const onMove = (e: PointerEvent) => {
       if (e.pointerType !== "mouse") return;
       const rect = el.getBoundingClientRect();
-      const tileW = window.innerWidth * 0.32;
-      const max = rect.width / 2 - tileW / 2 - 24;
-      const next = e.clientX - rect.left - rect.width / 2;
-      pointerX.set(Math.max(-max, Math.min(next, max)));
+      const max = rect.width * (TILE.side / 100) - 24;
+      pointerX.set(Math.max(-max, Math.min(e.clientX - rect.left - rect.width / 2, max)));
     };
     el.addEventListener("pointermove", onMove);
     return () => el.removeEventListener("pointermove", onMove);
   }, [reduce, pointerX]);
 
+  // Don't decode video nobody can see.
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) v.play().catch(() => {});
+      else v.pause();
+    });
+    io.observe(v);
+    return () => io.disconnect();
+  }, []);
+
+  const restingClip = `inset(${TILE.top}vh ${TILE.side}vw ${100 - TILE.top - TILE.height}vh ${TILE.side}vw round 24px)`;
+
   return (
     <section id="home" ref={ref} className="relative md:h-[220vh]">
-      <div className="relative md:sticky md:top-0 md:h-screen md:overflow-hidden">
-        {/* ===== FLOATING VIDEO (md and up) ===== */}
+      <div className="relative flex flex-col md:block md:sticky md:top-0 md:h-screen md:overflow-hidden">
+        {/* ===== VIDEO: a rounded card on phones, a clip-path window on desktop ===== */}
         <motion.div
           aria-hidden="true"
-          style={reduce ? undefined : { width, height, borderRadius: radius, top, x }}
-          className={`hidden md:block absolute left-1/2 z-20 -translate-x-1/2 overflow-hidden bg-black shadow-[0_30px_80px_-20px_rgba(0,0,0,0.35)] will-change-transform ${
-            reduce ? "top-[9vh] h-[44vh] w-[32vw] rounded-3xl" : ""
-          }`}
+          style={{ ["--clip" as string]: reduce ? restingClip : clip }}
+          className="order-last mx-5 mb-16 aspect-[4/5] overflow-hidden rounded-3xl bg-black md:order-none md:absolute md:inset-0 md:z-20 md:m-0 md:aspect-auto md:rounded-none md:[clip-path:var(--clip)] pointer-events-none"
         >
           <video
+            ref={videoRef}
             src="/video/hero.mp4"
-            preload="auto"
+            poster="/img/hero-poster.jpg"
+            preload="metadata"
             autoPlay
             muted
             loop
@@ -84,13 +101,13 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-2 flex flex-col sm:flex-row sm:justify-between font-saans font-semibold uppercase leading-[0.85] tracking-[-0.055em] text-ink text-[17vw] sm:text-[clamp(3rem,11.6vw,12rem)]">
-            {/* React Bits SplitText (GSAP): letters rise out of a mask on load */}
-            <span>
-              <SplitText text="Design" tag="span" splitType="chars" mask trigger="load" delay={45} duration={1.1} ease="power4.out" textAlign="left" />
-            </span>
-            <span className="self-end sm:self-auto">
-              <SplitText text="Engineer" tag="span" splitType="chars" mask trigger="load" delay={45} duration={1.1} ease="power4.out" textAlign="left" staggerFrom="end" />
-            </span>
+            {/* Lumo line reveal on load, the second word a beat after the first */}
+            <LineReveal as="span" trigger="load" delay={0.15} className="block">
+              Design
+            </LineReveal>
+            <LineReveal as="span" trigger="load" delay={0.235} className="block self-end sm:self-auto">
+              Engineer
+            </LineReveal>
           </h1>
 
           <div className="mt-8 flex items-center justify-between text-[1.0625rem] text-muted">
@@ -99,21 +116,6 @@ export default function Hero() {
               Cool Sh*t
               <AnimatedIcon icon={scrollDown} size={26} trigger="loop" />
             </span>
-          </div>
-        </div>
-
-        {/* ===== MOBILE VIDEO ===== */}
-        <div className="md:hidden px-5 pb-16">
-          <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-black">
-            <video
-              src="/video/hero.mp4"
-              aria-hidden="true"
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="h-full w-full object-cover"
-            />
           </div>
         </div>
       </div>

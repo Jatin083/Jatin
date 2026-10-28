@@ -1,8 +1,7 @@
 "use client";
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { motion } from "motion/react";
-import Reveal from "../Reveal/Reveal";
-import Headline from "../Headline/Headline";
+import LineReveal from "../LineReveal/LineReveal";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import github from "react-useanimations/lib/github";
 import explore from "react-useanimations/lib/explore";
@@ -63,39 +62,37 @@ const PROJECTS: Project[] = [
   },
 ];
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
+function ProjectCard({ project }: { project: Project }) {
   return (
-    <Reveal delay={(index % 2) * 0.1} className="h-full">
       <motion.article
-        whileHover={{ y: -6 }}
         whileTap={{ scale: 0.985 }}
         transition={SPRING}
         className="group relative flex h-full flex-col overflow-hidden rounded-[28px] bg-tile"
       >
-        {/* COVER */}
+        {/* COVER: the Cuberto cursor shows "View site" over it */}
         <a
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Open ${project.name} live site`}
+          data-cursor-text="View site"
           className="relative m-3 mb-0 block aspect-[16/10] overflow-hidden rounded-[20px] bg-black"
         >
-          <img
+          <Image
             src={project.cover}
             alt={`${project.name} screenshot`}
-            loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.04]"
+            fill
+            sizes="(min-width: 1200px) 580px, (min-width: 768px) 48vw, 92vw"
+            className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.04]"
           />
-          <span className="glass-dark absolute right-3 top-3 rounded-full px-3 py-1 text-[0.75rem] font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-            Visit site ↗
-          </span>
         </a>
 
         {/* COPY */}
         <div className="flex flex-1 flex-col gap-4 p-7 sm:p-8">
           <div>
-            <p className="type-eyebrow text-muted">
-              {project.kind} · {project.year}
+            <p className="flex gap-3 text-[0.875rem] text-muted">
+              <span>{project.kind}</span>
+              <span>{project.year}</span>
             </p>
             <h3 className="type-title mt-1.5 text-ink">{project.name}</h3>
             <p className="mt-2 text-[1.0625rem] leading-snug text-muted">{project.blurb}</p>
@@ -122,27 +119,25 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           </div>
         </div>
       </motion.article>
-    </Reveal>
   );
 }
 
 export default function Work() {
   return (
     <section id="work" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
-      <Reveal className="flex flex-wrap items-end justify-between gap-6">
-        <div>
-          <p className="type-eyebrow text-muted">Selected work</p>
-          <Headline text="Things I’ve built." className="mt-3 block" />
-        </div>
+      <div className="flex flex-wrap items-end justify-between gap-6">
+        <LineReveal as="h2" className="type-headline">
+          Things I’ve built.
+        </LineReveal>
         <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-2 text-[1.0625rem]">
           <AnimatedIcon icon={github} size={22} />
           All projects on GitHub <span aria-hidden className="chev">›</span>
         </a>
-      </Reveal>
+      </div>
 
       <div className="mt-14 grid gap-5 md:grid-cols-2">
-        {PROJECTS.map((project, i) => (
-          <ProjectCard key={project.repo} project={project} index={i} />
+        {PROJECTS.map((project) => (
+          <ProjectCard key={project.repo} project={project} />
         ))}
       </div>
     </section>

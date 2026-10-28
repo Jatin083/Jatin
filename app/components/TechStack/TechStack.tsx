@@ -1,9 +1,5 @@
 "use client";
 
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
 import {
   SiReact,
   SiNextdotjs,
@@ -19,8 +15,7 @@ import {
   SiGit,
 } from "react-icons/si";
 import LogoLoop, { type LogoItem } from "../reactbits/LogoLoop/LogoLoop";
-
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+import LineReveal from "../LineReveal/LineReveal";
 
 // Edit the stack here. `node` is any icon; `title` shows on hover.
 const STACK: LogoItem[] = [
@@ -57,51 +52,20 @@ function Cell({ item }: { item: LogoItem }) {
 }
 
 export default function TechStack() {
-  const ref = useRef<HTMLElement>(null);
-
-  // Each letter rises out of its own mask, tied to scroll position, rippling
-  // out from the middle of each line. Reduced motion: letters are just there.
-  useGSAP(
-    () => {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      gsap.utils.toArray<HTMLElement>(".ts-line").forEach((line) => {
-        gsap.fromTo(
-          line.querySelectorAll(".ts-char"),
-          { yPercent: 110 },
-          {
-            yPercent: 0,
-            ease: "power3.out",
-            stagger: { each: 0.04, from: "center" },
-            scrollTrigger: { trigger: line, start: "top 92%", end: "top 45%", scrub: 0.6 },
-          }
-        );
-      });
-    },
-    { scope: ref }
-  );
-
   return (
-    <section ref={ref} id="stack" aria-label="Tech stack" className="py-24 md:py-32">
-      <h2
-        aria-label={LINES.join(" ")}
-        className="px-5 text-center font-saans font-semibold uppercase leading-[0.9] tracking-[-0.05em] text-ink text-[clamp(2.5rem,12vw,13rem)]"
-      >
-        {LINES.map((line) => (
-          <span key={line} className="ts-line flex justify-center" aria-hidden>
-            {Array.from(line).map((ch, i) => (
-              <span key={i} className="inline-block overflow-hidden pb-[0.04em]">
-                <span className="ts-char inline-block will-change-transform">
-                  {ch === " " ? " " : ch}
-                </span>
-              </span>
-            ))}
-          </span>
+    <section id="stack" aria-label="Tech stack" className="py-24 md:py-32">
+      {/* Lumo line reveal, second line a beat behind the first */}
+      <h2 className="px-5 text-center font-saans font-semibold uppercase leading-[0.9] tracking-[-0.05em] text-ink text-[clamp(2.5rem,12vw,13rem)]">
+        {LINES.map((line, i) => (
+          <LineReveal key={line} as="span" className="block" delay={i * 0.085}>
+            {line}
+          </LineReveal>
         ))}
       </h2>
 
-      <div className="mx-auto mt-16 md:mt-24 flex max-w-[1200px] items-end justify-between px-5 sm:px-8">
-        <p className="type-eyebrow uppercase tracking-[0.08em] text-ink">Daily drivers</p>
-        <p className="type-eyebrow text-muted">{STACK.length} tools · always learning</p>
+      <div className="mx-auto mt-16 md:mt-24 flex max-w-[1200px] items-end justify-between px-5 sm:px-8 text-[0.875rem]">
+        <p className="font-semibold text-ink">Daily drivers</p>
+        <p className="text-muted">{STACK.length} tools I use every week</p>
       </div>
 
       <div className="mt-4 border-y border-hairline">

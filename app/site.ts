@@ -8,5 +8,3 @@ export const SITE = {
 
 // Default spring for UI (critically damped: no overshoot).
 export const SPRING = { type: "spring", bounce: 0, duration: 0.4 } as const;
-// For motion the user started with momentum (open/close, press release).
-export const SPRING_SOFT = { type: "spring", bounce: 0.15, duration: 0.45 } as const;

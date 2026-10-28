@@ -1,11 +1,28 @@
 @import "tailwindcss";
 
+/* Saans, weight axis only, Latin subset, WOFF2 (46 KB; was a 364 KB TTF). */
 @font-face {
   font-family: "Saans";
-  src: url("/font/SaansCollectionVF-TRIAL.ttf") format("truetype");
-  font-weight: 100 900;
+  src: url("/font/Saans-VF.woff2") format("woff2");
+  font-weight: 300 900;
   font-style: normal;
   font-display: swap;
+}
+
+/* ===== LUMO LINE REVEAL ===== */
+/* Hidden until GSAP splits it, so lines never flash before rising. */
+[data-line-reveal] {
+  visibility: hidden;
+}
+/* Room for descenders inside each line's mask. */
+.lr-line-mask {
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-line-reveal] {
+    visibility: visible;
+  }
 }
 
 /* ===== DESIGN TOKENS (Apple-style neutrals + one accent) ===== */
@@ -207,4 +224,34 @@ a:focus-visible > .chev {
 }
 .chip:hover {
   transform: translateY(-1px);
+}
+
+/* ===== CUBERTO CURSOR ===== */
+.mf-cursor {
+  color: var(--color-ink);
+  z-index: 1000;
+}
+/* Light dot over the dark tiles and video */
+.mf-cursor.-inverse {
+  color: #fff;
+}
+/* Links: a ring instead of a dot */
+.mf-cursor.-pointer:not(.-text):before {
+  transform: scale(0.45);
+  background: transparent;
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+/* Text state: an accent-blue disc with the label inside */
+.mf-cursor.-text:before {
+  background: var(--color-accent);
+  box-shadow: none;
+  opacity: 1;
+  transform: scale(2);
+}
+.mf-cursor-text {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
 }
