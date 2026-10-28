@@ -1,67 +1,81 @@
+"use client";
+
+import { motion } from "motion/react";
+import Reveal from "../Reveal/Reveal";
+import { SPRING } from "@/app/site";
+
 const SERVICES = [
   {
     id: "01",
     title: "Brand Direction",
-    desc: "Shaping a clear brand foundation by aligning purpose, positioning, and voice — so every decision feels intentional.",
+    desc: "A clear foundation — purpose, positioning and voice aligned so every decision feels intentional.",
     items: ["Brand positioning", "Research & insights", "Voice & tone", "Copy & naming", "Workshops"],
+    span: "md:col-span-2",
+    dark: true,
   },
   {
     id: "02",
     title: "Digital Design",
-    desc: "Designing interfaces that balance aesthetics with usability, guided by systems, structure, and real user needs.",
-    items: ["Identity systems", "Wireframes", "UI / UX design", "Web & product design", "Design systems"],
+    desc: "Interfaces that balance beauty with usability, guided by systems and real needs.",
+    items: ["Identity systems", "Wireframes", "UI / UX design", "Web & product", "Design systems"],
+    span: "",
   },
   {
     id: "03",
     title: "Development",
-    desc: "Engineering performant, scalable products where motion, interaction, and structure work together seamlessly.",
+    desc: "Fast, scalable front-ends where motion, interaction and structure work as one.",
     items: ["Frontend development", "Motion & animation", "SEO & performance", "CMS integration", "Databases & tooling"],
+    span: "md:col-span-3",
   },
 ];
 
 export default function Service() {
   return (
-    <section id="services" className="w-full px-4 sm:px-8 pt-28 pb-[22vh]">
-      <div className="rounded-2xl bg-[#171717] px-6 py-12 sm:px-10 sm:py-16 lg:px-16 lg:py-20 text-white">
-        {/* Header */}
-        <div className="mb-16 lg:mb-20 max-w-2xl">
-          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-white/50">
-            Services
-          </p>
-          <h2 className="mb-6 text-3xl sm:text-4xl lg:text-5xl leading-tight">
-            Designed with intent.
-            <br />
-            Built to last.
-          </h2>
-          <p className="text-sm leading-relaxed text-white/70">
-            Every project begins with clarity and ends with execution. I work
-            across design, development, and strategy to create digital
-            experiences that feel considered, functional, and quietly confident.
-          </p>
-        </div>
+    <section id="services" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
+      <Reveal className="max-w-2xl">
+        <p className="type-eyebrow text-muted">Services</p>
+        <h2 className="type-headline mt-3">
+          Designed with intent.
+          <br />
+          <span className="text-faint">Built to last.</span>
+        </h2>
+      </Reveal>
 
-        {/* Services */}
-        <div className="space-y-16">
-          {SERVICES.map((service) => (
-            <div
-              key={service.id}
-              className="grid grid-cols-1 gap-8 border-t border-white/10 pt-10 md:grid-cols-3"
+      {/* Bento grid */}
+      <div className="mt-14 grid gap-5 md:grid-cols-3">
+        {SERVICES.map((s, i) => (
+          <Reveal key={s.id} delay={i * 0.08} className={s.span}>
+            <motion.div
+              whileHover={{ y: -4 }}
+              transition={SPRING}
+              className={`flex h-full flex-col justify-between gap-10 rounded-[28px] p-8 sm:p-10 ${
+                s.dark ? "bg-black text-[#f5f5f7]" : "bg-tile text-ink"
+              }`}
             >
               <div>
-                <span className="text-xs text-white/40">{service.id}</span>
-                <h3 className="mt-3 text-2xl">{service.title}</h3>
+                <span className={`font-saans text-[3.5rem] font-semibold leading-none tracking-[-0.04em] ${s.dark ? "text-white/25" : "text-black/15"}`}>
+                  {s.id}
+                </span>
+                <h3 className="type-title mt-6">{s.title}</h3>
+                <p className={`mt-3 max-w-md text-[1.0625rem] leading-relaxed ${s.dark ? "text-[#a1a1a6]" : "text-muted"}`}>
+                  {s.desc}
+                </p>
               </div>
-
-              <p className="text-sm leading-relaxed text-white/70">{service.desc}</p>
-
-              <ul className="space-y-2 text-sm text-white/60">
-                {service.items.map((item) => (
-                  <li key={item}>{item}</li>
+              <ul className="flex flex-wrap gap-2">
+                {s.items.map((item) => (
+                  <li
+                    key={item}
+                    className={`rounded-full px-3.5 py-1.5 text-[0.8125rem] font-medium ${
+                      s.dark ? "bg-white/10" : "bg-black/[0.05]"
+                    }`}
+                  >
+                    {item}
+                  </li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+            </motion.div>
+          </Reveal>
+        ))}
       </div>
     </section>
   );

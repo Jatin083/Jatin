@@ -1,37 +1,73 @@
-export default function About() {
+"use client";
+
+import { useRef } from "react";
+import { motion, MotionValue, useScroll, useTransform } from "motion/react";
+import Reveal from "../Reveal/Reveal";
+
+const STATEMENT =
+  "I’m Jatin, a design engineer. I shape interfaces where structure, typography and motion come together — removing the unnecessary, refining the details, and building things that feel intentional and last.";
+
+const FACTS = [
+  { label: "Based in", value: "India, working globally" },
+  { label: "Building at", value: "Lumo Studio" },
+  { label: "Freelance", value: "Available March 2026" },
+];
+
+function Word({
+  children,
+  progress,
+  range,
+}: {
+  children: string;
+  progress: MotionValue<number>;
+  range: [number, number];
+}) {
+  const opacity = useTransform(progress, range, [0.18, 1]);
   return (
-    <section id="about" className="w-full px-4 sm:px-8 py-28 md:py-40">
-      <div className="grid gap-12 md:grid-cols-12">
-        <p className="md:col-span-3 text-xs uppercase tracking-[0.25em] text-black/50">
-          About
-        </p>
+    <motion.span style={{ opacity }} className="inline-block mr-[0.25em]">
+      {children}
+    </motion.span>
+  );
+}
 
-        <div className="md:col-span-9 max-w-4xl">
-          <h2 className="mb-12 text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight tracking-tight">
-            I’m Jatin, a design engineer focused on building clean, thoughtful
-            digital products.
-          </h2>
+export default function About() {
+  const ref = useRef<HTMLParagraphElement>(null);
+  // Words light up as the paragraph travels through the middle of the screen.
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start 0.85", "end 0.45"],
+  });
 
-          <div className="grid gap-6 sm:grid-cols-3">
-            <p className="text-sm leading-relaxed text-black/70">
-              I work across design and development, shaping interfaces where
-              structure, typography, and motion come together with clarity and
-              purpose.
-            </p>
+  const words = STATEMENT.split(" ");
 
-            <p className="text-sm leading-relaxed text-black/70">
-              My approach is grounded in simplicity — removing the unnecessary,
-              refining the details, and building systems that scale without
-              losing character.
-            </p>
+  return (
+    <section id="about" className="mx-auto max-w-[1100px] px-5 sm:px-8 py-32 md:py-48">
+      <Reveal>
+        <p className="type-eyebrow text-muted">About</p>
+      </Reveal>
 
-            <p className="text-sm leading-relaxed text-black/70">
-              Whether it’s a personal portfolio or a production product, I focus
-              on work that feels intentional, usable, and built to last.
-            </p>
-          </div>
-        </div>
-      </div>
+      <p ref={ref} className="type-headline mt-6 text-ink" aria-label={STATEMENT}>
+        {words.map((word, i) => {
+          const start = i / words.length;
+          const end = start + 1 / words.length;
+          return (
+            <Word key={i} progress={scrollYProgress} range={[start, end]}>
+              {word}
+            </Word>
+          );
+        })}
+      </p>
+
+      <dl className="mt-20 grid gap-8 border-t border-hairline pt-10 sm:grid-cols-3">
+        {FACTS.map((f, i) => (
+          <Reveal key={f.label} delay={i * 0.08}>
+            <dt className="type-eyebrow text-faint">{f.label}</dt>
+            <dd className="mt-2 text-[1.3125rem] font-semibold tracking-[-0.015em] text-ink">
+              {f.value}
+            </dd>
+          </Reveal>
+        ))}
+      </dl>
     </section>
   );
 }

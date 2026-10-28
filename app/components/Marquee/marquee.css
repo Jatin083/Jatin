@@ -15,13 +15,13 @@
 
 .marquee-group {
   display: flex;
-  gap: 0.6rem;
-  padding-right: 0.6rem;
+  gap: 1rem;
+  padding-right: 1rem;
 }
 
 .marquee-track span {
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
 }
 
 /* SPEED VARIANTS */

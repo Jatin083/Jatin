@@ -1,16 +1,19 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
-import Copy from "@/app/components/Copy/Copy";
-import Marquee from "../Marquee/marquee";
+import { motion } from "motion/react";
+import Reveal from "../Reveal/Reveal";
+import { SPRING } from "@/app/site";
 
 type Project = {
   name: string;
   type: string;
   year: string;
+  blurb: string;
   cover: string;
   logo: string;
   video: string;
   tags: string[];
+  dark?: boolean;
 };
 
 // Add, remove or reorder projects here.
@@ -19,101 +22,109 @@ const PROJECTS: Project[] = [
     name: "Lumo Studio",
     type: "Web Agency",
     year: "2025",
+    blurb: "An editorial agency site with scroll-driven storytelling.",
     cover: "/img/studio.jpg",
     logo: "/img/lumo.jpg",
     video: "/video/hero.mp4",
-    tags: ["CT BUILDER,", "DESIGN ENGINEER,", "NEXT.JS,", "REACT,", "TAILWIND,", "GSAP,", "EDITORIAL UI,"],
+    tags: ["Next.js", "GSAP", "Tailwind", "Editorial UI"],
+    dark: true,
   },
   {
     name: "Lumo Studio",
     type: "Web Agency",
     year: "2025",
+    blurb: "Design system and motion language for the studio’s client work.",
     cover: "/img/studio.jpg",
     logo: "/img/lumo.jpg",
     video: "/video/hero.mp4",
-    tags: ["CT BUILDER,", "DESIGN ENGINEER,", "NEXT.JS,", "REACT,", "TAILWIND,", "GSAP,", "EDITORIAL UI,"],
+    tags: ["React", "Design systems", "Motion"],
   },
 ];
 
-function ProjectCard({ project }: { project: Project }) {
+function ProjectCard({ project, index }: { project: Project; index: number }) {
+  const dark = project.dark;
   return (
-    <article className="w-full md:w-1/2 h-[70vh] md:h-[90vh] rounded-2xl flex flex-col bg-[#171717] gap-4 p-4">
-      {/* IMAGE / HOVER AREA */}
-      <div className="group relative flex-1 min-h-0 w-full rounded-2xl overflow-hidden">
-        <img
-          className="h-full w-full object-cover scale-110 group-hover:scale-105 transition-transform duration-700 ease-[cubic-bezier(0.87,0,0.13,1)]"
-          src={project.cover}
-          alt={`${project.name} cover`}
-          loading="lazy"
-        />
+    <Reveal delay={index * 0.1} className="h-full">
+      <motion.article
+        whileHover={{ y: -6 }}
+        whileTap={{ scale: 0.985 }}
+        transition={SPRING}
+        className={`group flex h-full flex-col overflow-hidden rounded-[28px] ${
+          dark ? "bg-black text-[#f5f5f7]" : "bg-tile text-ink"
+        }`}
+      >
+        {/* COPY */}
+        <div className="px-8 pt-10 sm:px-10 sm:pt-12 text-center">
+          <div className="flex items-center justify-center gap-2.5">
+            <img src={project.logo} alt="" className="h-6 w-6 rounded-full" />
+            <span className={`type-eyebrow ${dark ? "text-[#a1a1a6]" : "text-muted"}`}>
+              {project.type} · {project.year}
+            </span>
+          </div>
+          <h3 className="type-title mt-3">{project.name}</h3>
+          <p className={`mt-2 text-[1.0625rem] leading-snug ${dark ? "text-[#a1a1a6]" : "text-muted"}`}>
+            {project.blurb}
+          </p>
+          <ul className="mt-4 flex flex-wrap justify-center gap-2">
+            {project.tags.map((t) => (
+              <li
+                key={t}
+                className={`rounded-full px-3 py-1 text-[0.75rem] font-medium ${
+                  dark ? "bg-white/10 text-[#f5f5f7]" : "bg-black/[0.05] text-ink"
+                }`}
+              >
+                {t}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        {/* BLUR OVERLAY */}
-        <div className="absolute inset-0 bg-neutral-900/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out z-10" />
-
-        {/* CENTER CLIP DIV WITH VIDEO */}
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-[8%]
-            w-[60%] h-[50%]
-            rounded-lg overflow-hidden z-20
-            [clip-path:polygon(30%_50%,70%_50%,70%_50%,30%_50%)]
-            group-hover:[clip-path:polygon(0_100%,100%_100%,100%_0,0_0)]
-            group-hover:-translate-y-1/2
-            transition-all duration-700
-            ease-[cubic-bezier(0.87,0,0.13,1)]
-          "
-        >
-          <video
-            src={project.video}
-            aria-hidden="true"
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="h-full w-full object-cover"
+        {/* MEDIA: cover image, video reveals on hover from the centre */}
+        <div className="relative mt-8 mx-6 mb-6 flex-1 min-h-[280px] overflow-hidden rounded-[20px]">
+          <img
+            className="absolute inset-0 h-full w-full object-cover scale-105 transition-transform duration-[900ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-100"
+            src={project.cover}
+            alt={`${project.name} cover`}
+            loading="lazy"
           />
-        </div>
-      </div>
-
-      {/* META */}
-      <div className="w-full text-white">
-        <div className="flex justify-between items-center p-2 gap-4 text-base sm:text-xl font-semibold">
-          <div className="flex items-center gap-3 sm:gap-4 min-w-0">
-            <img src={project.logo} alt="" className="h-8 w-8 rounded-full shrink-0" />
-            <h3 className="truncate">{project.name}</h3>
+          <div className="absolute inset-0 bg-black/30 opacity-0 backdrop-blur-sm transition-opacity duration-500 group-hover:opacity-100" />
+          <div
+            className="
+              absolute left-1/2 top-1/2 h-[56%] w-[64%] -translate-x-1/2 -translate-y-1/2
+              overflow-hidden rounded-xl
+              [clip-path:inset(50%_50%_50%_50%_round_12px)]
+              group-hover:[clip-path:inset(0_0_0_0_round_12px)]
+              transition-[clip-path] duration-700 ease-[cubic-bezier(0.25,0.1,0.25,1)]
+            "
+          >
+            <video
+              src={project.video}
+              aria-hidden="true"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="none"
+              className="h-full w-full object-cover"
+            />
           </div>
-          <div className="flex gap-4 shrink-0">
-            <span>{project.type}</span>
-            <span>{project.year}</span>
-          </div>
         </div>
-
-        <div className="px-2 sm:px-4">
-          <Marquee items={project.tags} speed="slow" className="uppercase text-sm" />
-        </div>
-      </div>
-    </article>
+      </motion.article>
+    </Reveal>
   );
 }
 
 export default function Work() {
   return (
-    <section id="work" className="px-4 sm:px-8 min-h-screen">
-      {/* Heading */}
-      <div className="w-full pt-[20vh] text-[11.5vw] flex justify-between uppercase font-bold">
-        <Copy delay={0.2}>
-          <h2 className="font-saans leading-none tracking-tight">Work</h2>
-        </Copy>
-        <Copy delay={0.2}>
-          <span className="font-saans leading-none tracking-tight">&apos;25</span>
-        </Copy>
-      </div>
+    <section id="work" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
+      <Reveal className="text-center">
+        <p className="type-eyebrow text-muted">Selected work · ’25</p>
+        <h2 className="type-headline mt-3">Things I’ve built.</h2>
+      </Reveal>
 
-      {/* Content */}
-      <div className="mt-3 w-full flex flex-col md:flex-row gap-4">
+      <div className="mt-14 grid gap-5 md:grid-cols-2 md:auto-rows-[minmax(640px,auto)]">
         {PROJECTS.map((project, i) => (
-          <ProjectCard key={i} project={project} />
+          <ProjectCard key={i} project={project} index={i} />
         ))}
       </div>
     </section>

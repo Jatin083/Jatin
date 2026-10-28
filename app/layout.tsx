@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Navbar from "./components/Navbar/Navbar";
 import Overlay from "./components/OverlayNav/OverlayNav";
 import "./globals.css";
@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#fbfbfd",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -23,11 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-saans bg-[#F5F5F5] text-black antialiased">
+      <body className="font-sans bg-canvas text-ink">
         <LenisProvider>
-          <Overlay />
           <Navbar />
-          {children}
+          <main>{children}</main>
+          <Overlay />
         </LenisProvider>
       </body>
     </html>

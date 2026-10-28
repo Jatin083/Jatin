@@ -2,6 +2,11 @@
 export const SITE = {
   name: "Jatin Singh",
   github: "https://github.com/Jatin083",
-  // Set this to the address you want visitors to email, e.g. "mailto:you@example.com".
+  // Where "Get in touch" buttons point. Swap for "mailto:you@example.com" to take email.
   contactHref: "https://github.com/Jatin083",
 };
+
+// Default spring for UI (critically damped: no overshoot).
+export const SPRING = { type: "spring", bounce: 0, duration: 0.4 } as const;
+// For motion the user started with momentum (open/close, press release).
+export const SPRING_SOFT = { type: "spring", bounce: 0.15, duration: 0.45 } as const;

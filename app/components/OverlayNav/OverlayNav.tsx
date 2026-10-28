@@ -1,82 +1,40 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import './OverlayNav.css';
 import Marquee from '../Marquee/marquee';
-
-gsap.registerPlugin(ScrollTrigger);
+import { SPRING, SPRING_SOFT } from '@/app/site';
 
 const LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Work', href: '#work' },
   { label: 'Services', href: '#services' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 const SKILLS = [
-  'CT BUILDER,',
-  'DESIGN ENGINEER,',
-  'NEXT.JS,',
-  'REACT,',
-  'TAILWIND,',
-  'GSAP,',
-  'FRAMER MOTION,',
-  'THREE.JS,',
-  'WEB ANIMATIONS,',
-  'INTERACTION DESIGN,',
-  'UI / UX,',
-  'EDITORIAL LAYOUTS,',
-  'MICRO INTERACTIONS,',
-  'PERFORMANCE FIRST,',
-  'ACCESSIBILITY,',
-  'SCROLL SYSTEMS,',
-  'CREATIVE DEV,',
-  'FRONTEND ARCHITECT,',
+  'Design engineer',
+  'Next.js',
+  'React',
+  'Tailwind',
+  'GSAP',
+  'Motion',
+  'Three.js',
+  'Interaction design',
+  'UI / UX',
+  'Editorial layouts',
+  'Micro-interactions',
+  'Performance first',
+  'Accessibility',
+  'Scroll systems',
 ];
 
 export default function OverlayNav() {
-  const boxRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false);
+  const reduce = useReducedMotion();
 
-  /* ===== SCROLL: ONLY MICRO POLISH (NO OPEN) ===== */
-  useEffect(() => {
-    if (!boxRef.current) return;
-
-    gsap.set(boxRef.current, { height: '14vh', borderRadius: '32px' });
-
-    const st = ScrollTrigger.create({
-      trigger: document.body,
-      start: 'top top',
-      end: '+=300',
-      scrub: true,
-      onUpdate: (self) => {
-        gsap.to(boxRef.current, {
-          borderRadius: gsap.utils.interpolate(32, 24, self.progress) + 'px',
-          ease: 'none',
-          overwrite: 'auto',
-        });
-      },
-    });
-
-    return () => st.kill();
-  }, []);
-
-  /* ===== CLICK OPEN / CLOSE ===== */
-  useEffect(() => {
-    if (!boxRef.current) return;
-
-    gsap.to(boxRef.current, {
-      height: open ? '44vh' : '14vh',
-      borderRadius: open ? '20px' : '32px',
-      duration: 0.6,
-      ease: 'power3.inOut',
-      overwrite: 'auto',
-    });
-  }, [open]);
-
-  /* ===== CLOSE ON ESCAPE ===== */
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && setOpen(false);
@@ -85,64 +43,91 @@ export default function OverlayNav() {
   }, [open]);
 
   return (
-    <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-999 w-[calc(100vw-2rem)] sm:w-[70vw] lg:w-[43vw]">
-      {/* MAIN BOX */}
-      <div ref={boxRef} className="relative w-full bg-black text-white overflow-hidden">
-        {/* MENU CONTENT (ONLY VISIBLE WHEN OPEN) */}
-        <nav
-          id="overlay-menu"
-          aria-label="Main"
-          aria-hidden={!open}
-          className={`absolute top-0 left-0 w-full px-6 pt-6 transition-opacity duration-300 ${
-            open ? 'opacity-100' : 'opacity-0 pointer-events-none'
-          }`}
+    <>
+      {/* Dim to focus while the menu is open; tap anywhere to dismiss. */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            key="scrim"
+            className="fixed inset-0 z-[998] bg-black/20"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.25 }}
+            onClick={() => setOpen(false)}
+          />
+        )}
+      </AnimatePresence>
+
+      <div className="fixed bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-[999] w-[calc(100vw-2rem)] sm:w-[440px]">
+        {/* Springs animate from the current value, so the panel can be
+            reversed mid-flight without a jump. */}
+        <motion.div
+          layout
+          transition={reduce ? { duration: 0 } : open ? SPRING_SOFT : SPRING}
+          style={{ borderRadius: 26, transformOrigin: 'bottom center' }}
+          className="glass-dark overflow-hidden text-[#f5f5f7] shadow-[0_20px_50px_-12px_rgba(0,0,0,0.45)]"
         >
-          <ul className="space-y-1">
-            {LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  tabIndex={open ? 0 : -1}
-                  onClick={() => setOpen(false)}
-                  className="menu-item block"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+          <AnimatePresence initial={false}>
+            {open && (
+              <motion.nav
+                key="menu"
+                id="overlay-menu"
+                aria-label="Sections"
+                initial={{ opacity: 0, y: 12, filter: 'blur(6px)' }}
+                animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                exit={{ opacity: 0, y: 12, filter: 'blur(6px)' }}
+                transition={SPRING}
+                className="px-3 pt-3"
+              >
+                <ul>
+                  {LINKS.map((link, i) => (
+                    <motion.li
+                      key={link.href}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ ...SPRING, delay: 0.03 * i }}
+                    >
+                      <a href={link.href} onClick={() => setOpen(false)} className="menu-item">
+                        {link.label}
+                        <span aria-hidden className="text-white/30">›</span>
+                      </a>
+                    </motion.li>
+                  ))}
+                </ul>
+                <div className="mx-3 mt-2 h-px bg-white/10" />
+              </motion.nav>
+            )}
+          </AnimatePresence>
 
-        {/* BOTTOM BAR */}
-        <div className="absolute bottom-0 left-0 h-[14vh] w-full px-2 sm:px-4 py-2 flex items-center justify-between bg-black">
-          {/* LEFT */}
-          <div className="h-full flex items-center gap-3 sm:gap-5 px-2 sm:px-4 flex-1 min-w-0">
-            {/* AVATAR */}
-            <div className="h-[10vh] w-[10vh] rounded-xl overflow-hidden bg-orange-500 shrink-0">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jatin" className="h-full w-full object-cover" alt="Jatin Singh avatar" />
+          {/* BAR */}
+          <motion.div layout="position" className="flex h-[68px] items-center gap-3 px-2.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jatin&backgroundColor=ffd5dc"
+              className="h-12 w-12 shrink-0 rounded-[14px]"
+              alt="Jatin Singh avatar"
+            />
+            <div className="flex min-w-0 flex-1 flex-col justify-center">
+              <p className="text-[0.9375rem] font-semibold tracking-[-0.01em] leading-tight">Jatin Singh</p>
+              <Marquee items={SKILLS} speed="slow" className="text-[0.8125rem] text-white/55" />
             </div>
-
-            {/* TEXT */}
-            <div className="flex flex-col justify-center gap-1 text-base sm:text-lg min-w-0">
-              <p className="font-semibold uppercase leading-none">Jatin Singh</p>
-              <Marquee items={SKILLS} speed="slow" className="uppercase text-sm" />
-            </div>
-          </div>
-
-          {/* MENU BUTTON */}
-          <button
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-            aria-controls="overlay-menu"
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            className="h-[10vh] w-[10vh] text-[28px] rounded-2xl flex items-center justify-center font-semibold shrink-0 hover:bg-white/10 transition-colors"
-          >
-            {open ? '✕' : '☰'}
-          </button>
-        </div>
+            <button
+              type="button"
+              onClick={() => setOpen((o) => !o)}
+              aria-expanded={open}
+              aria-controls="overlay-menu"
+              aria-label={open ? 'Close menu' : 'Open menu'}
+              className="menu-toggle"
+            >
+              <span className={`menu-icon ${open ? 'is-open' : ''}`} aria-hidden>
+                <span />
+                <span />
+              </span>
+            </button>
+          </motion.div>
+        </motion.div>
       </div>
-    </div>
+    </>
   );
 }
