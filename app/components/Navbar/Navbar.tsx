@@ -1,149 +1,39 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { SITE, SPRING } from "@/app/site";
-import RollText from "../RollText/RollText";
-import "./Navbar.css";
-
-const LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
-];
+import { SITE } from "@/app/site";
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
-  const reduce = useReducedMotion();
-
-  // Scroll edge effect: the hairline only appears once content slides under the bar.
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  // Close on Escape, and if the window grows past the mobile breakpoint.
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
-    const mq = window.matchMedia("(min-width: 768px)");
-    const onMq = () => mq.matches && setOpen(false);
-    window.addEventListener("keydown", onKey);
-    mq.addEventListener("change", onMq);
-    return () => {
-      window.removeEventListener("keydown", onKey);
-      mq.removeEventListener("change", onMq);
-    };
-  }, [open]);
-
   return (
-    <>
-      {/* Dim the page behind the open menu; tap to dismiss. */}
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            key="scrim"
-            className="fixed inset-0 z-40 bg-black/25 md:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.25 }}
-            onClick={() => setOpen(false)}
-          />
-        )}
-      </AnimatePresence>
+    <nav className="w-full px-4 sm:px-8 pt-6 pb-1 sticky top-0 z-50">
+      <div className="max-w-8xl mx-auto gap-4 sm:gap-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 items-center text-sm sm:text-base lg:text-lg font-semibold">
+        {/* Block 1 */}
+        <div className="hidden md:flex flex-col gap-0">
+          <p className="text-black">India based</p>
+          <p className="text-[#A1A1A1]">Working globally</p>
+        </div>
 
-      <header
-        className={`glass-light fixed top-0 inset-x-0 z-50 transition-[box-shadow] duration-300 ${
-          scrolled || open ? "shadow-[0_1px_0_rgba(0,0,0,0.08)]" : ""
-        }`}
-      >
-        <nav
-          aria-label="Primary"
-          className="mx-auto flex h-12 max-w-[1200px] items-center justify-between px-5 sm:px-8 text-[0.8125rem]"
-        >
-          <a href="#home" onClick={() => setOpen(false)} className="font-semibold tracking-[-0.01em] text-ink">
-            Jatin Singh
+        {/* Block 2 */}
+        <div className="flex flex-col gap-0">
+          <p>Building at</p>
+          <p className="text-[#A1A1A1] font-semibold">Lumo Studio</p>
+        </div>
+
+        {/* Block 3 */}
+        <div className="hidden sm:flex flex-col gap-0">
+          <p>Freelance availability</p>
+          <p className="text-[#A1A1A1] font-semibold">March 2026</p>
+        </div>
+
+        {/* CTA */}
+        <div className="flex justify-end">
+          <a
+            href={SITE.contactHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 sm:px-6 sm:py-3 bg-black text-white rounded-full font-bold"
+          >
+            Get in touch
           </a>
-
-          <ul className="hidden md:flex items-center gap-8 text-ink/80">
-            {LINKS.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} className="roll transition-colors hover:text-ink">
-                  <RollText>{l.label}</RollText>
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex items-center gap-3">
-            <span className="hidden lg:inline-flex items-center gap-2 text-muted">
-              <span className="live-dot h-1.5 w-1.5 rounded-full bg-[#30d158]" aria-hidden />
-              Available March 2026
-            </span>
-            <a
-              href={SITE.contactHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-pill btn-primary !py-1.5 !px-3.5 text-[0.75rem]"
-            >
-              Get in touch
-            </a>
-            <button
-              type="button"
-              onClick={() => setOpen((o) => !o)}
-              aria-expanded={open}
-              aria-controls="mobile-menu"
-              aria-label={open ? "Close menu" : "Open menu"}
-              className="nav-toggle md:hidden"
-            >
-              <span className={`nav-icon ${open ? "is-open" : ""}`} aria-hidden>
-                <span />
-                <span />
-              </span>
-            </button>
-          </div>
-        </nav>
-
-        {/* MOBILE MENU: grows down from the bar it belongs to */}
-        <AnimatePresence initial={false}>
-          {open && (
-            <motion.div
-              key="menu"
-              id="mobile-menu"
-              initial={{ height: 0 }}
-              animate={{ height: "auto" }}
-              exit={{ height: 0 }}
-              transition={reduce ? { duration: 0 } : SPRING}
-              className="overflow-hidden md:hidden"
-            >
-              <ul className="px-5 sm:px-8 pt-4 pb-10">
-                {LINKS.map((l, i) => (
-                  <motion.li
-                    key={l.href}
-                    initial={{ opacity: 0, y: -8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8, transition: { duration: 0.12 } }}
-                    transition={{ ...SPRING, delay: reduce ? 0 : 0.04 * i }}
-                  >
-                    <a
-                      href={l.href}
-                      onClick={() => setOpen(false)}
-                      className="block py-2.5 font-saans text-[1.75rem] font-semibold tracking-[-0.025em] text-ink active:text-muted"
-                    >
-                      {l.label}
-                    </a>
-                  </motion.li>
-                ))}
-              </ul>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </header>
-    </>
+        </div>
+      </div>
+    </nav>
   );
 }

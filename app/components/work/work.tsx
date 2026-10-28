@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import { motion } from "motion/react";
+import { useRef } from "react";
 import LineReveal from "../LineReveal/LineReveal";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import github from "react-useanimations/lib/github";
 import explore from "react-useanimations/lib/explore";
-import { SITE, SPRING } from "@/app/site";
+import { SITE } from "@/app/site";
 
 type Project = {
   name: string;
@@ -62,29 +62,78 @@ const PROJECTS: Project[] = [
   },
 ];
 
+// Original hover: image eases from 110% to 105%, a blurred scrim fades in,
+// and the video opens out of a thin centre line. The video only loads and
+// plays while the cover is hovered.
+const EASE = "ease-[cubic-bezier(0.87,0,0.13,1)]";
+
 function ProjectCard({ project }: { project: Project }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const timer = useRef<number | undefined>(undefined);
+  const play = () => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (v.preload === "none") v.preload = "auto";
+    // Wait until the clip window has started to open: Chrome pauses muted
+    // video that starts playing while it is fully clipped away.
+    window.clearTimeout(timer.current);
+    timer.current = window.setTimeout(() => v.play().catch(() => {}), 150);
+  };
+  const pause = () => {
+    window.clearTimeout(timer.current);
+    videoRef.current?.pause();
+  };
+
   return (
-      <motion.article
-        whileTap={{ scale: 0.985 }}
-        transition={SPRING}
-        className="group relative flex h-full flex-col overflow-hidden rounded-[28px] bg-tile"
-      >
-        {/* COVER: the Cuberto cursor shows "View site" over it */}
+      <article className="relative flex h-full flex-col overflow-hidden rounded-[28px] bg-tile">
+        {/* COVER */}
         <a
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Open ${project.name} live site`}
-          data-cursor-text="View site"
-          className="relative m-3 mb-0 block aspect-[16/10] overflow-hidden rounded-[20px] bg-black"
+          onMouseEnter={play}
+          onMouseLeave={pause}
+          onFocus={play}
+          onBlur={pause}
+          className="group relative m-3 mb-0 block aspect-[16/10] overflow-hidden rounded-[20px] bg-black"
         >
           <Image
             src={project.cover}
             alt={`${project.name} screenshot`}
             fill
             sizes="(min-width: 1200px) 580px, (min-width: 768px) 48vw, 92vw"
-            className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-[1.04]"
+            className={`object-cover scale-110 group-hover:scale-105 group-focus-visible:scale-105 transition-transform duration-700 ${EASE}`}
           />
+
+          {/* BLUR OVERLAY */}
+          <div className="absolute inset-0 z-10 bg-neutral-900/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition-opacity duration-500 ease-in-out" />
+
+          {/* CENTER CLIP WITH VIDEO */}
+          <div
+            className={`
+              absolute top-1/2 left-1/2 z-20 h-[50%] w-[60%]
+              -translate-x-1/2 -translate-y-[8%]
+              overflow-hidden rounded-lg
+              [clip-path:polygon(30%_50%,70%_50%,70%_50%,30%_50%)]
+              group-hover:[clip-path:polygon(0_100%,100%_100%,100%_0,0_0)]
+              group-hover:-translate-y-1/2
+              group-focus-visible:[clip-path:polygon(0_100%,100%_100%,100%_0,0_0)]
+              group-focus-visible:-translate-y-1/2
+              transition-all duration-700 ${EASE}
+            `}
+          >
+            <video
+              ref={videoRef}
+              src="/video/hero.mp4"
+              aria-hidden="true"
+              preload="none"
+              muted
+              loop
+              playsInline
+              className="h-full w-full object-cover"
+            />
+          </div>
         </a>
 
         {/* COPY */}
@@ -118,7 +167,7 @@ function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </div>
-      </motion.article>
+      </article>
   );
 }
 
