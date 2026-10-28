@@ -6,8 +6,10 @@ Personal portfolio of **Jatin Singh**, a design engineer. Built with a focus on 
 
 - [Next.js 16](https://nextjs.org) (App Router) + React 19 + TypeScript
 - [Tailwind CSS 4](https://tailwindcss.com)
-- [GSAP](https://gsap.com) (ScrollTrigger, SplitText) for animation
-- [Lenis](https://lenis.darkroom.engineering) for smooth scrolling
+- [GSAP](https://gsap.com) (SplitText, ScrollTrigger) for text reveals
+- [Motion](https://motion.dev) for springs, scroll-linked effects and hover/press feedback
+- [Lenis](https://lenis.darkroom.engineering) for smooth scrolling, driven by GSAP’s ticker
+- [React Bits](https://reactbits.dev) components (SplitText, ScrollVelocity, Magnet), vendored in `app/components/reactbits`
 
 ## Sections
 
@@ -18,7 +20,8 @@ Personal portfolio of **Jatin Singh**, a design engineer. Built with a focus on 
 | About    | `app/components/About/About.tsx`       |
 | Work     | `app/components/work/work.tsx`         |
 | Services | `app/components/service/services.tsx`  |
-| Menu bar | `app/components/OverlayNav/OverlayNav.tsx` |
+| Tech strip | `app/components/Stack/Stack.tsx`       |
+| Contact  | `app/components/Contact/Contact.tsx`   |
 
 Projects in the Work section and the service list are plain arrays at the top of their files, so adding content doesn't mean touching markup. Contact links live in `app/site.ts`.
 

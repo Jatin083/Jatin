@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import Reveal from "../Reveal/Reveal";
+import Headline from "../Headline/Headline";
 import { SPRING } from "@/app/site";
 
 const SERVICES = [
@@ -32,14 +33,13 @@ const SERVICES = [
 export default function Service() {
   return (
     <section id="services" className="mx-auto max-w-[1200px] px-5 sm:px-8 py-24 md:py-32">
-      <Reveal className="max-w-2xl">
-        <p className="type-eyebrow text-muted">Services</p>
-        <h2 className="type-headline mt-3">
-          Designed with intent.
-          <br />
-          <span className="text-faint">Built to last.</span>
-        </h2>
-      </Reveal>
+      <div className="max-w-2xl">
+        <Reveal>
+          <p className="type-eyebrow text-muted">Services</p>
+        </Reveal>
+        <Headline text="Designed with intent." className="mt-3 block" />
+        <Headline text="Built to last." className="block text-faint" />
+      </div>
 
       {/* Bento grid */}
       <div className="mt-14 grid gap-5 md:grid-cols-3">

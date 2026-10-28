@@ -1,4 +1,7 @@
 import Reveal from "../Reveal/Reveal";
+import SplitText from "../reactbits/SplitText/SplitText";
+import Magnet from "../reactbits/Magnet/Magnet";
+import RollText from "../RollText/RollText";
 import { SITE } from "@/app/site";
 
 export default function Contact() {
@@ -8,20 +11,31 @@ export default function Contact() {
         <Reveal>
           <div className="rounded-[28px] bg-black px-8 py-20 sm:py-28 text-center text-[#f5f5f7]">
             <p className="type-eyebrow text-[#a1a1a6]">Contact</p>
-            <h2 className="type-hero mt-4 !text-[clamp(2.75rem,8vw,7rem)]">
-              Let’s build
-              <br />
-              something great.
-            </h2>
+            {/* React Bits SplitText: letters rise from a mask, staggered from the centre */}
+            <SplitText
+              text="Let’s build something great."
+              tag="h2"
+              splitType="words, chars"
+              mask
+              delay={18}
+              duration={1}
+              ease="power4.out"
+              staggerFrom="center"
+              textAlign="center"
+              className="type-hero mt-4 block !text-[clamp(2.75rem,8vw,7rem)] !leading-[1.06] mx-auto max-w-[11ch]"
+            />
             <p className="type-body-lg mx-auto mt-6 max-w-md text-[#a1a1a6]">
               Taking on freelance projects from March 2026.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-6 text-[1.0625rem]">
-              <a href={SITE.contactHref} target="_blank" rel="noopener noreferrer" className="btn-pill btn-primary">
-                Get in touch
-              </a>
-              <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="font-medium text-[#2997ff] hover:underline">
-                GitHub <span aria-hidden>↗</span>
+              {/* React Bits Magnet: the button leans toward the cursor */}
+              <Magnet padding={60} magnetStrength={3} maxOffset={14}>
+                <a href={SITE.contactHref} target="_blank" rel="noopener noreferrer" className="roll btn-pill btn-primary">
+                  <RollText>Get in touch</RollText>
+                </a>
+              </Magnet>
+              <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="roll font-medium text-[#2997ff]">
+                <RollText>GitHub ↗</RollText>
               </a>
             </div>
           </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { SITE, SPRING } from "@/app/site";
+import RollText from "../RollText/RollText";
 import "./Navbar.css";
 
 const LINKS = [
@@ -72,8 +73,8 @@ export default function Navbar() {
           <ul className="hidden md:flex items-center gap-8 text-ink/80">
             {LINKS.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="transition-colors hover:text-ink">
-                  {l.label}
+                <a href={l.href} className="roll transition-colors hover:text-ink">
+                  <RollText>{l.label}</RollText>
                 </a>
               </li>
             ))}

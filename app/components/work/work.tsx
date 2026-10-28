@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "motion/react";
 import Reveal from "../Reveal/Reveal";
+import Headline from "../Headline/Headline";
 import { SITE, SPRING } from "@/app/site";
 
 type Project = {
@@ -126,7 +127,7 @@ export default function Work() {
       <Reveal className="flex flex-wrap items-end justify-between gap-6">
         <div>
           <p className="type-eyebrow text-muted">Selected work</p>
-          <h2 className="type-headline mt-3">Things I’ve built.</h2>
+          <Headline text="Things I’ve built." className="mt-3 block" />
         </div>
         <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="btn-link text-[1.0625rem]">
           All projects on GitHub <span aria-hidden>›</span>

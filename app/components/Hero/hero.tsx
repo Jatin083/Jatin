@@ -9,6 +9,7 @@ import {
   useSpring,
   useTransform,
 } from "motion/react";
+import SplitText from "../reactbits/SplitText/SplitText";
 
 // Original split layout. The video tile drifts toward the cursor on a
 // critically damped spring, then on scroll grows into a full-bleed frame
@@ -81,8 +82,13 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-2 flex flex-col sm:flex-row sm:justify-between font-saans font-semibold uppercase leading-[0.85] tracking-[-0.055em] text-ink text-[17vw] sm:text-[clamp(3rem,11.6vw,12rem)]">
-            <span>Design</span>
-            <span className="self-end sm:self-auto">Engineer</span>
+            {/* React Bits SplitText (GSAP): letters rise out of a mask on load */}
+            <span>
+              <SplitText text="Design" tag="span" splitType="chars" mask trigger="load" delay={45} duration={1.1} ease="power4.out" textAlign="left" />
+            </span>
+            <span className="self-end sm:self-auto">
+              <SplitText text="Engineer" tag="span" splitType="chars" mask trigger="load" delay={45} duration={1.1} ease="power4.out" textAlign="left" staggerFrom="end" />
+            </span>
           </h1>
 
           <div className="mt-8 flex items-center justify-between text-[1.0625rem] text-muted">

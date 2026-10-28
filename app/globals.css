@@ -118,15 +118,6 @@ html {
   border-radius: 6px;
 }
 
-/* ===== LENIS ===== */
-html.lenis,
-html.lenis body {
-  height: auto;
-}
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
 /* ===== ACCESSIBILITY PREFERENCES ===== */
 @media (prefers-reduced-motion: reduce) {
   *,
