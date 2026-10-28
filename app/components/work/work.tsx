@@ -3,6 +3,9 @@
 import { motion } from "motion/react";
 import Reveal from "../Reveal/Reveal";
 import Headline from "../Headline/Headline";
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import github from "react-useanimations/lib/github";
+import explore from "react-useanimations/lib/explore";
 import { SITE, SPRING } from "@/app/site";
 
 type Project = {
@@ -101,17 +104,19 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <div className="mt-auto flex flex-wrap items-center justify-between gap-3">
             <ul className="flex flex-wrap gap-2">
               {project.tags.map((t) => (
-                <li key={t} className="rounded-full bg-black/[0.05] px-3 py-1 text-[0.75rem] font-medium text-ink">
+                <li key={t} className="chip rounded-full bg-black/[0.05] hover:bg-black/[0.08] px-3 py-1 text-[0.75rem] font-medium text-ink">
                   {t}
                 </li>
               ))}
             </ul>
             <div className="flex items-center gap-4 text-[0.9375rem]">
-              <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-link">
-                Live <span aria-hidden>›</span>
+              <a href={project.live} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-1.5">
+                <AnimatedIcon icon={explore} size={18} />
+                Live
               </a>
-              <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn-link">
-                Code <span aria-hidden>›</span>
+              <a href={project.repo} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-1.5">
+                <AnimatedIcon icon={github} size={18} />
+                Code
               </a>
             </div>
           </div>
@@ -129,8 +134,9 @@ export default function Work() {
           <p className="type-eyebrow text-muted">Selected work</p>
           <Headline text="Things I’ve built." className="mt-3 block" />
         </div>
-        <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="btn-link text-[1.0625rem]">
-          All projects on GitHub <span aria-hidden>›</span>
+        <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="btn-link inline-flex items-center gap-2 text-[1.0625rem]">
+          <AnimatedIcon icon={github} size={22} />
+          All projects on GitHub <span aria-hidden className="chev">›</span>
         </a>
       </Reveal>
 

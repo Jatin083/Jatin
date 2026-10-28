@@ -2,6 +2,10 @@ import Reveal from "../Reveal/Reveal";
 import SplitText from "../reactbits/SplitText/SplitText";
 import Magnet from "../reactbits/Magnet/Magnet";
 import RollText from "../RollText/RollText";
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import mail from "react-useanimations/lib/mail";
+import github from "react-useanimations/lib/github";
+import arrowUp from "react-useanimations/lib/arrowUp";
 import { SITE } from "@/app/site";
 
 export default function Contact() {
@@ -31,11 +35,13 @@ export default function Contact() {
               {/* React Bits Magnet: the button leans toward the cursor */}
               <Magnet padding={60} magnetStrength={3} maxOffset={14}>
                 <a href={SITE.contactHref} target="_blank" rel="noopener noreferrer" className="roll btn-pill btn-primary">
+                  <AnimatedIcon icon={mail} size={20} />
                   <RollText>Get in touch</RollText>
                 </a>
               </Magnet>
-              <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="roll font-medium text-[#2997ff]">
-                <RollText>GitHub ↗</RollText>
+              <a href={SITE.github} target="_blank" rel="noopener noreferrer" className="roll inline-flex items-center gap-1.5 font-medium text-[#2997ff]">
+                <AnimatedIcon icon={github} size={20} />
+                <RollText>GitHub</RollText>
               </a>
             </div>
           </div>
@@ -45,7 +51,13 @@ export default function Contact() {
       <footer className="mx-auto max-w-[1200px] px-5 sm:px-8 pt-10 pb-10 text-[0.75rem] text-faint">
         <div className="flex flex-col gap-2 border-t border-hairline pt-5 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} {SITE.name}. Designed and built by hand.</p>
-          <p>India · Working globally</p>
+          <div className="flex items-center gap-6">
+            <p>India · Working globally</p>
+            <a href="#home" className="roll inline-flex items-center gap-1 font-medium text-ink">
+              <AnimatedIcon icon={arrowUp} size={16} />
+              <RollText>Back to top</RollText>
+            </a>
+          </div>
         </div>
       </footer>
     </>

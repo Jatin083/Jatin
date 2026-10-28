@@ -152,3 +152,59 @@ html {
     border-color: #fff;
   }
 }
+
+/* ===== MICRO-INTERACTIONS ===== */
+
+/* useanimations icons follow the text colour */
+.anim-icon path {
+  stroke: currentColor;
+}
+.anim-icon path[fill]:not([fill="none"]) {
+  fill: currentColor;
+}
+
+/* Text links: underline draws in from the left, chevron nudges forward */
+.btn-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 350ms var(--ease-apple);
+}
+.btn-link:hover {
+  text-decoration: none;
+  background-size: 100% 1px;
+}
+.chev {
+  display: inline-block;
+  transition: transform 300ms var(--ease-apple);
+}
+a:hover > .chev,
+a:focus-visible > .chev {
+  transform: translateX(3px);
+}
+
+/* Availability dot: a soft, slow ping */
+.live-dot {
+  position: relative;
+}
+.live-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: inherit;
+  animation: live-ping 2.4s var(--ease-apple) infinite;
+}
+@keyframes live-ping {
+  0% { transform: scale(1); opacity: 0.6; }
+  70%, 100% { transform: scale(2.6); opacity: 0; }
+}
+
+/* Chips lift slightly under the pointer */
+.chip {
+  transition: background-color 200ms ease-out, transform 200ms var(--ease-apple);
+}
+.chip:hover {
+  transform: translateY(-1px);
+}

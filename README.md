@@ -10,6 +10,7 @@ Personal portfolio of **Jatin Singh**, a design engineer. Built with a focus on 
 - [Motion](https://motion.dev) for springs, scroll-linked effects and hover/press feedback
 - [Lenis](https://lenis.darkroom.engineering) for smooth scrolling, driven by GSAP’s ticker
 - [React Bits](https://reactbits.dev) components (SplitText, LogoLoop, Magnet), vendored in `app/components/reactbits`
+- [useAnimations](https://useanimations.com) animated icons (`react-useanimations`), played by `app/components/AnimatedIcon`
 
 ## Sections
 

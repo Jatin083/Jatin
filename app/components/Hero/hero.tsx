@@ -10,6 +10,8 @@ import {
   useTransform,
 } from "motion/react";
 import SplitText from "../reactbits/SplitText/SplitText";
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import scrollDown from "react-useanimations/lib/scrollDown";
 
 // Original split layout. The video tile drifts toward the cursor on a
 // critically damped spring, then on scroll grows into a full-bleed frame
@@ -95,13 +97,7 @@ export default function Hero() {
             <span>Scroll for</span>
             <span className="flex items-center gap-2">
               Cool Sh*t
-              <motion.span
-                aria-hidden
-                animate={reduce ? undefined : { y: [0, 4, 0] }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
-              >
-                ↓
-              </motion.span>
+              <AnimatedIcon icon={scrollDown} size={26} trigger="loop" />
             </span>
           </div>
         </div>

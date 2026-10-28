@@ -82,7 +82,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <span className="hidden lg:inline-flex items-center gap-2 text-muted">
-              <span className="h-1.5 w-1.5 rounded-full bg-[#30d158]" aria-hidden />
+              <span className="live-dot h-1.5 w-1.5 rounded-full bg-[#30d158]" aria-hidden />
               Available March 2026
             </span>
             <a

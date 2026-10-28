@@ -65,7 +65,7 @@ export default function Service() {
                 {s.items.map((item) => (
                   <li
                     key={item}
-                    className={`rounded-full px-3.5 py-1.5 text-[0.8125rem] font-medium ${
+                    className={`chip rounded-full px-3.5 py-1.5 text-[0.8125rem] font-medium ${
                       s.dark ? "bg-white/10" : "bg-black/[0.05]"
                     }`}
                   >
